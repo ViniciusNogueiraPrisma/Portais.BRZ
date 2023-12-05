@@ -1,7 +1,8 @@
 .header {
   // background-color: transparent;
-  background-color: #0000003d;
-  padding: 12px 0;
+  // background-color: #0000003d;
+  background-color: #fff;
+  // padding: 12px 0;
   transition: 0.3s;
 
   &.fixed {
@@ -25,7 +26,7 @@
       flex-shrink: 0;
 
       img {
-        width: 156px;
+        width: 112px;
       }
     }
 
@@ -34,7 +35,8 @@
     }
 
     .nav-menu-header {
-      flex: 1;
+      // flex: 1;
+
       @media (max-width: 991px) {
         display: none;
       }
@@ -42,8 +44,8 @@
       > ul {
         display: flex;
         justify-content: flex-end;
-        margin-right: 48px !important;
-        gap: 20px;
+        // margin-right: 48px !important;
+        gap: 40px;
 
         @media (max-width: 1600px) {
           margin-right: 16px !important;
@@ -60,10 +62,12 @@
           margin-bottom: 0px;
 
           .dropdown-toggle {
-            color: var(--text-white);
+            color: #595b61;
             text-decoration: none;
-            font-size: rem(16);
+            font-size: rem(14);
             font-weight: 400;
+            padding: 24px 0px;
+            // border: 1px solid red;
             // padding: 4px 12px;
 
             display: flex;
@@ -189,11 +193,12 @@
         }
 
         .icon-busca {
-          background-color: #008f85;
-          border-radius: 4px;
-          padding: 8px;
+          // background-color: #008f85;
+          // border-radius: 4px;
+          // padding: 8px;
 
           &::before {
+            color: #ed7d31;
           }
         }
       }
@@ -440,7 +445,7 @@
   transition: 0.4s;
   width: 100%;
   z-index: 100;
-  position: absolute;
+  // position: absolute;
   top: 0;
 }
 

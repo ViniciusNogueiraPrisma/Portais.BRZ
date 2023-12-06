@@ -1,55 +1,55 @@
 /* Css que faz a imagem dar zoom */
 
 .full-screen-main-div {
-    position: relative;
-    overflow-y: auto;
-  
-    margin-top: 20px;
-    margin-bottom: 20px;
-  
-    display: block !important;
-    -webkit-overflow-scrolling: touch;
-  
-    &.zoomDiv{
-      overflow-x: scroll;
-      width: 100%;
-      max-height: 500px;
-  
-      @media (max-width: 767.98px) {
-        max-height: 400px;
-      }
-  
-      @media (max-width: 575.98px){
-        max-height: 320px;
-      }
-  
-      @media (max-width: 375px){
-        max-height: 230px;
-      }
+  position: relative;
+  overflow-y: auto;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  display: block !important;
+  -webkit-overflow-scrolling: touch;
+
+  &.zoomDiv {
+    overflow-x: scroll;
+    width: 100%;
+    max-height: 500px;
+
+    @media (max-width: 767.98px) {
+      max-height: 400px;
     }
-  
-    img {
-      &.openImgZoom{
-        max-width: 1200px;
-      }
+
+    @media (max-width: 575.98px) {
+      max-height: 320px;
+    }
+
+    @media (max-width: 375px) {
+      max-height: 230px;
     }
   }
 
-.header-interno{
+  img {
+    &.openImgZoom {
+      max-width: 1200px;
+    }
+  }
+}
+
+.header-interno {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
 
-  .info-header-interno{
+  .info-header-interno {
     padding: 211px 0 40px;
 
-    .header-title{
+    .header-title {
       color: var(--text-white);
       font-weight: 400;
     }
 
-    .list-history-page{
+    .list-history-page {
       margin-bottom: 0;
       padding: 0;
 
@@ -57,45 +57,45 @@
       align-items: center;
       flex-wrap: wrap;
 
-      li{
+      li {
         font-size: rem(14);
-        
-        img{
+
+        img {
           margin-right: 8px;
         }
 
-        a{
+        a {
           text-decoration: none;
           color: var(--text-grey-scale-03);
 
-          &:hover{
+          &:hover {
             text-decoration: underline;
           }
         }
 
-        &:not(:last-child){
+        &:not(:last-child) {
           display: flex;
           align-items: center;
-          
-          a{
+
+          a {
             display: flex;
             align-items: center;
             line-height: 100%;
           }
 
-          &::after{
+          &::after {
             content: "";
             display: block;
             margin-left: 8px;
             margin-right: 8px;
             width: 12px;
             height: 12px;
-            background-image: url('../images/icons/icon-arrow-right-small.svg');
+            background-image: url("../images/icons/icon-arrow-right-small.svg");
           }
         }
 
-        &.active{
-          a{
+        &.active {
+          a {
             color: var(--text-white);
           }
         }
@@ -104,64 +104,63 @@
   }
 }
 
-.section-compartilhar{
+.section-compartilhar {
   padding-top: 24px;
   padding-bottom: 64px;
 }
 
-.flex-compartilhar{
+.flex-compartilhar {
   display: flex;
   align-items: center;
   border-top: 1px solid var(--text-grey-scale-02);
   padding-top: 16px;
 
-  span{
+  span {
     color: var(--text-azul-1);
     font-size: rem(14);
     margin-right: 8px;
   }
 
-  ul{
+  ul {
     display: flex;
     align-items: center;
     padding: 0;
     margin-bottom: 0;
 
-    li{
-      &:not(:last-child){
+    li {
+      &:not(:last-child) {
         margin-right: 8px;
       }
     }
   }
-  
 }
 
-#mainInternal > section{
+#mainInternal > section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.flex-header-filtro{
+.flex-header-filtro {
   display: flex;
   justify-content: space-between;
 
-  h2{
+  h2 {
     margin-bottom: 0;
   }
 }
 
-.filtro-form{
+.filtro-form {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 16px;
   margin-top: 0;
 
-  @media (max-width: 475px){
+  @media (max-width: 475px) {
     flex-direction: column;
   }
 }
 
-.form-select-filtro{
+.form-select-filtro {
   display: flex;
   flex-direction: column;
   border-radius: 2px;
@@ -171,22 +170,22 @@
 
   padding: 8px;
 
-  @media (min-width: 475px){
-    &:not(:last-child){
+  @media (min-width: 475px) {
+    &:not(:last-child) {
       margin-right: 16px;
     }
   }
 
-  @media (max-width: 475px){
+  @media (max-width: 475px) {
     margin-bottom: 12px;
   }
 
-  label{
+  label {
     font-size: rem(10);
     color: var(--text-color);
   }
 
-  select{
+  select {
     background-color: transparent;
     border: none;
     color: var(--text-color);
@@ -196,53 +195,210 @@
 
     background-image: url("../images/icons/icon-arrow-down-full.svg");
 
-    option{
+    option {
       color: var(--pure-black);
     }
   }
 }
 
-.img-perfil-corporativo, .img-missao-riweb, .img-missao-riweb{
-    img{
-      max-width: 480px;
-      width: 100%;
-      max-height: 350px;
-      object-fit: contain;
-      margin: 0 auto;
-    }
+.img-perfil-corporativo,
+.img-missao-riweb,
+.img-missao-riweb {
+  img {
+    max-width: 480px;
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
 }
 
-.img-missao-riweb{
-  img{
+.img-missao-riweb {
+  img {
     max-height: 397px;
   }
 }
 
-.img-valores-empresa{
-  img{
+.img-valores-empresa {
+  img {
     max-height: 420px;
   }
 }
 
-
-.img-sustentabilidade-100{
+.img-sustentabilidade-100 {
   width: 100%;
   max-height: 450px;
   object-fit: cover;
 }
 
-.section-nossa-visao{
+.section-nossa-visao {
   padding: 145px 0 85px !important;
   background-image: url("../images/bg-nossa-visao.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (max-width: 991px){
+  @media (max-width: 991px) {
     background-position: top left;
   }
 
-  h2,p{
+  h2,
+  p {
     color: var(--text-white);
+  }
+}
+
+.main-banner {
+  position: relative;
+  z-index: 1;
+
+  img {
+    height: 473px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.pagination-banner {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 473px;
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+  padding-bottom: 80px;
+
+  z-index: 3;
+
+  h1 {
+    z-index: 3;
+    // Sobre Nós
+    color: white;
+    font-size: 40px;
+    font-family: var(--font-roboto-slab);
+    font-weight: 700;
+    line-height: 52.8px;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container-internas {
+    max-width: 1152px !important;
+  }
+}
+
+.texts-sobre-nos {
+  padding: 80px 0px;
+
+  .brz-desafios {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 40px;
+
+    .texts-1 {
+      h2 {
+        color: #ed7d31;
+        font-size: 34px;
+        font-family: var(--font-roboto-slab);
+        font-weight: 300;
+        line-height: 44.88px;
+        word-wrap: break-word;
+      }
+    }
+
+    .texts-2 {
+      p {
+        color: #666666;
+        font-size: 16px;
+        font-family: var(--font-roboto-slab);
+        font-weight: 400;
+        line-height: 24.8px;
+        word-wrap: break-word;
+      }
+    }
+  }
+
+  .brz-selos {
+    display: flex;
+    gap: 16px;
+
+    .brz-selos-imgs {
+      background-color: #fafafa;
+      padding: 32px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 8px;
+
+      h6 {
+        color: #70737a;
+        font-size: 18px;
+        font-family: var(--font-roboto-slab);
+        font-weight: 700;
+        line-height: 25.2px;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+
+.section-propostas {
+  padding: 80px 0px;
+  background-color: #595b61;
+
+  .container-propostas {
+    .prop-title {
+      text-align: center;
+
+      h2 {
+        margin: 0;
+        padding: 0;
+
+        color: white;
+        font-size: 34px;
+        font-family: var(--font-roboto-slab);
+        font-weight: 300;
+        line-height: 44.88px;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+
+
+.cards-prop-container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+
+  .cards-prop {
+   background-color: #70737A;
+   border-radius: 4px;
+   width: 355px;
+   height: 471px;
+   padding: 48px 40px;
+
+
+   &:last-child {
+    background-color: #ed7d31;
+   }
+
+
+   .imgs-card-prop {
+    width: fit-content;
+
+    img {
+      width: 56px;
+    }
+   }
   }
 }

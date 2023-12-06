@@ -253,294 +253,83 @@
   }
 }
 
-.banner-home-vbi {
-  img {
-    height: 863px;
-    object-fit: cover;
-    width: 100%;
-  }
-  &:after {
+.num-brz {
+  padding: 140px 0px;
+  background-color: #595b61;
+}
+
+.content-carrosel-home {
+  height: 669px;
+
+  &::before {
     content: "";
-    position: absolute;
-    height: 100%;
-    background-color: #0000004b;
-    top: 0;
+    height: 669px;
+    background: rgb(237, 125, 49);
+    background: linear-gradient(
+      90deg,
+      rgba(237, 125, 49, 0.7791491596638656) 0%,
+      rgba(237, 125, 49, 0.2637429971988795) 36%
+    );
     width: 100%;
-  }
-}
-
-.infos-banner {
-  position: absolute;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  top: 0;
-  width: 100%;
-
-  .container {
-    max-width: 1476px;
-  }
-}
-
-.content-banner {
-  width: 668px;
-
-  h1 {
-    color: white;
-    font-size: 64px;
-    font-family: var(--font-verdana-bold);
-    font-weight: 700;
-    line-height: 70.4px;
-    word-wrap: break-word;
-    margin-bottom: 32px;
-    padding: 0;
-  }
-
-  h5 {
-    color: #eeeeee;
-    font-size: 21px;
-    font-family: var(--font-verdana);
-    font-weight: 400;
-    line-height: 29.4px;
-    word-wrap: break-word;
-    padding: 0;
-    margin-bottom: 80px;
-  }
-
-  .btns-content-banner {
+    z-index: 0;
     display: flex;
-    gap: 24px;
-
-    a {
-      padding: 12px 32px;
-      border-radius: 4px;
-      text-decoration: none;
-    }
-
-    .first-btn-banner {
-      background-color: #008076;
-
-      // Saiba mais
-      color: white;
-      font-size: 16px;
-      font-family: var(--font-verdana);
-      font-weight: 400;
-      line-height: 26.24px;
-      word-wrap: break-word;
-    }
-
-    .second-btn-banner {
-      background-color: #ffffff;
-
-      // Assista ao vídeo
-      color: #008076;
-      font-size: 16px;
-      font-family: var(--font-verdana);
-      font-weight: 400;
-      line-height: 26.24px;
-      word-wrap: break-word;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      border: 1px solid #008076;
-    }
+    position: absolute;
   }
-}
 
-.swiper-home {
-  .swiper-pagination.container {
-    left: 0;
-    right: 0;
-    max-width: 1476px;
+  video {
     height: 100%;
-    justify-content: center;
+    width: 100%;
+    object-fit: cover;
   }
 
-  .swiper-pagination {
+  .infos-banner-home {
+    // border: 1px solid red;
+    padding-top: 100px;
+    height: 669px;
+    width: 636px;
+    position: absolute;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    // justify-content: flex-end;
-    align-items: flex-end;
-    gap: 8px;
-
-    .swiper-pagination-bullet {
-      background-color: #fafafa;
-      transition: 0.6s;
-      height: 8px;
-      opacity: 0.6 !important;
-    }
-
-    .swiper-pagination-bullet-active {
-      // border: 4px solid red;
-      // width: 80px;
-      height: 80px !important;
-      opacity: 1 !important;
-      height: 8px;
-      transition: 0.6s;
-      border-radius: 0px;
-      background-color: #00a99d;
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-    }
-  }
-}
-
-.missao-home {
-  .container {
-    max-width: 1476px;
-  }
-}
-
-.container-missao {
-  padding-top: 60px;
-
-  .title-missao {
-    padding-top: 60px;
-    h2 {
-      // Somos
-      color: #585959;
-      font-size: 150px;
-      font-family: "Crinsom foam";
-      font-weight: 400;
-      word-wrap: break-word;
-      margin: 0;
-      padding: 0;
-      margin-left: -70px;
-      margin-bottom: 10px;
-      line-height: 0 !important;
-    }
-
-    h1 {
-      color: #4c4d4d;
-      font-size: 34px;
-      font-family: var(--font-verdana-bold);
-      font-weight: 700;
-      line-height: 44.88px;
-      word-wrap: break-word;
-      text-transform: uppercase;
-
-      margin: 0;
-    }
-  }
-}
-
-.container-box-missao {
-  display: flex;
-  padding-top: 40px;
-  gap: 80px;
-}
-
-.content-boxs-missao {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 6px;
-  justify-content: flex-start;
-  grid-column-gap: 4px;
-  grid-row-gap: 4px;
-  width: 50%;
-
-  .box-missao {
-    padding: 56px 24px;
-    border-radius: 8px;
-    width: fit-content;
-    border: 1px solid var(--text-grey-scale-02);
     justify-content: center;
-    align-items: center;
-    text-align: center;
 
-    h1 {
-      // 7,9 Bi
-      color: #008f85;
-      font-size: 64px;
-      font-family: var(--font-verdana-bold);
+    h2 {
+      color: #fff;
       font-weight: 700;
-      line-height: 70.4px;
-      word-wrap: break-word;
+      font-size: 34px;
+      font-family: var(--font-roboto-slab);
+      line-height: 44px;
       margin: 0;
       padding: 0;
-      width: 313px;
     }
 
     p {
-      // de capital
-      color: #666666;
-      font-size: 18px;
-      font-family: Verdana;
-      font-weight: 400;
-      line-height: 25.2px;
-      word-wrap: break-word;
+      color: #fff;
+      font-weight: 300;
+      font-size: 34px;
+      font-family: var(--font-roboto-slab);
+      line-height: 44px;
+    }
 
-      strong {
-        font-family: var(--font-verdana-bold);
-      }
+    a {
     }
   }
 }
 
-.texts-boxs-missao {
-  width: 50%;
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 24px;
-
-  p {
-    color: #585959;
-    font-size: 18px;
-    font-family: var(--font-verdana);
-    font-weight: 400;
-    line-height: 25.2px;
-    word-wrap: break-word;
-
-    strong {
-      font-family: var(--font-verdana-bold);
-    }
-  }
-
-  a {
-    width: fit-content;
-    color: white;
-    font-size: 16px;
-    font-family: var(--font-verdana);
-    font-weight: 400;
-    line-height: 26.24px;
-    word-wrap: break-word;
-
-    background-color: #008076;
-    padding: 12px 32px;
-    border-radius: 4px;
-    text-decoration: none;
-  }
-}
-
-.segmento-home {
-  background-image: url("../../images/bg_segmento.jpg");
-  background-size: cover;
-}
-
-.contents-titles-segmento {
+.container-brz {
   border: 1px solid red;
   display: flex;
-  width: 100%;
-  gap: 24px;
 
-  .title-segmentos {
-    h2 {
-      color: #fff;
-      font-size: 150px;
-      font-family: var(--font-crimsom);
-      border: 1px solid red;
-    }
-
-    h1 {
-    }
+  .first-infos {
+    width: 50%;
+    border: 1px solid red;
   }
-}
 
-.num-brz {
-  padding: 140px 0px;
-  background-color: #999999;
+  .second-infos {
+    width: 50%;
+    border: 1px solid red;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

@@ -9,20 +9,31 @@ function debounce(callback, delay) {
   };
 }
 
-var swiper = new Swiper(".mySwiper", {
-  // effect: "fade",
-  loop: true,
-  autoplay: {
-    delay: 5000,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+document.addEventListener('DOMContentLoaded', function() {
+  var openModalLinks = document.querySelectorAll('.open-modal');
 
-$(".titulosCentral").each(function () {
-  $("#resultsTitle").append($(this));
+  openModalLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); // Impede o comportamento padrão do link
+
+      // Obtém o atributo data-bs-target do link
+      var targetModalId = link.getAttribute('data-bs-target');
+
+      // Verifica se o atributo existe antes de continuar
+      if (targetModalId) {
+        // Obtém a referência do modal
+        var targetModalElement = document.querySelector(targetModalId);
+
+        // Verifica se o modal foi encontrado antes de tentar mostrá-lo
+        if (targetModalElement) {
+          var targetModal = new bootstrap.Modal(targetModalElement);
+          targetModal.show();
+        } else {
+          console.error('Modal element not found:', targetModalId);
+        }
+      }
+    });
+  });
 });
 
 // observes the input's :focus and :focusout event inside the search box and styles its parent element.
@@ -72,6 +83,18 @@ window.addEventListener(
   }, 200)
 );
 
+var swiper = new Swiper(".mySwiper", {
+  // effect: "fade",
+  loop: true,
+  spaceBetween: "10",
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 // Tooltip
 
 var tooltipTriggerList = [].slice.call(
@@ -110,6 +133,19 @@ $("#contrast-toggle").on("click", function (e) {
 });
 
 /* Hover do menu */
+function changeImage(imagePath) {
+  var image = document.getElementById("tabImage");
+
+  image.classList.add("fade-out");
+
+  setTimeout(function () {
+    image.src = imagePath;
+
+    image.offsetHeight;
+
+    image.classList.remove("fade-out");
+  }, 100);
+}
 
 $(
   ".header .nav-menu-header .header-navigation-item > .dropdown-toggle"

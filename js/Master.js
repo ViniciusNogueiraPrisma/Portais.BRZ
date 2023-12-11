@@ -164,12 +164,12 @@ $(document).ready(function () {
     $('.imgBreadcrumb').first().html('<a href="/"><img src="./images/icons/icon-home.svg" alt="Home">Home</a>');
     $('.imgBreadcrumb').last().addClass('active');
 
-    $.post("Login.aspx",
-        function (data) {
-            $('#cadastro').html(data);
-            $('#loginModal').modal();
-            $('#cadastro').show();
-        });
+    // $.post("Login.aspx",
+    //     function (data) {
+    //         $('#cadastro').html(data);
+    //         $('#loginModal').modal();
+    //         $('#cadastro').show();
+    //     });
 
     $('a[id*=LnkBtLogoff]').each(function () {
         $('#usuLogado').show();

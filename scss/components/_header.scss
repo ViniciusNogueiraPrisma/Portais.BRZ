@@ -802,3 +802,49 @@
   z-index: -1;
   left: 12px;
 }
+
+@media (max-width: 1080px) {
+  .header .content {
+    padding: 24px 0px;
+
+    .header-right-side {
+    }
+  }
+
+  .toggle-mobile-menu {
+    display: flex !important;
+  }
+
+  .nav-menu-header {
+    display: none;
+  }
+
+  .open-searchbox {
+    display: none !important;
+  }
+
+  .area-restrista {
+    border-left: 0px;
+    margin-right: 24px;
+    padding-right: 24px;
+    padding-left: 0px;
+    border-right: 1px solid rgb(194, 194, 194);
+  }
+
+  .area-restrista a {
+    font-size: 0px;
+  }
+
+  .toggle-mobile-menu span::after,
+  .toggle-mobile-menu span::before {
+    background-color: #ed7d31;
+  }
+
+  .toggle-mobile-menu span {
+    background-color: #ed7d31;
+  }
+
+  .header .content {
+    justify-content: space-between;
+  }
+}

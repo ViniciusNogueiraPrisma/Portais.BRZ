@@ -27,6 +27,7 @@
     <meta property="og:description" content="" />
     <meta property="og:image" content=" " />
     <link preload="" rel="stylesheet" href="vendor/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="vendor/basic-table.min.css" />
     <link rel="stylesheet" href="vendor/slick.min.css" />
     <link rel="stylesheet" href="vendor/slick-theme.min.css" />
@@ -212,10 +213,10 @@
 
     <script src="vendor/jquery.min.js"></script>
 
-    <link rel="manifest" href="manifest.json" />
-    <script src="../sw.js"></script>
+    <!-- <link rel="manifest" href="manifest.json" /> -->
+    <!-- <script src="../sw.js"></script> -->
 
-    <script>
+    <!-- <script>
       if ("serviceWorker" in navigator) {
         if (navigator.serviceWorker.controller) {
           console.log("Active service worker found, no need to register");
@@ -232,7 +233,7 @@
             });
         }
       }
-    </script>
+    </script> -->
   </head>
 
   <body>
@@ -243,7 +244,7 @@
       <div class="container"></div>
     </div>
 
-    <div class="storys-fixed">
+    <!-- <div class="storys-fixed">
       <div data-slide="slide" class="slide">
         <button
           type="button"
@@ -334,7 +335,7 @@
             <div class="slide-thumb"></div>
             <div class="header-storys">
               <img
-                src="./images/logo-prisma-branca.svg"
+                src=""
                 width="132"
                 alt="Prisma"
               />
@@ -355,13 +356,13 @@
           <img src="./images/icon-right-story.svg" alt="Próximo" />
         </button>
       </div>
-    </div>
+    </div> -->
 
-    <div
+    <!-- <div
       id="fadeModal"
       class="modal-backdrop fade in"
       style="display: none"
-    ></div>
+    ></div> -->
 
     <div class="headerFixoMenu">
       <div class="acessibillity-bar">
@@ -528,33 +529,14 @@
                     <li class="item">
                       <a
                         class="dropdown-item"
-                        href="https://modelo.riprisma.com/Videos"
-                        target="_self"
-                        >Vídeos</a
+                        href="./sobre-nos.html"
+                        target="_blank"
+                        >Sobre Nós</a
                       >
                     </li>
                     <li class="item">
-                      <a
-                        class="dropdown-item"
-                        href="https://modelo.riprisma.com/quem-somos"
-                        target="_self"
-                        >Quem Somos</a
-                      >
-                    </li>
-                    <li class="item">
-                      <a
-                        class="dropdown-item"
-                        href="https://modelo.riprisma.com/missao-visao-e-valores"
-                        target="_self"
-                        >Missão, Visão e Valores</a
-                      >
-                    </li>
-                    <li class="item">
-                      <a
-                        class="dropdown-item"
-                        href="https://modelo.riprisma.com/historico"
-                        target="_self"
-                        >Histórico</a
+                      <a class="dropdown-item" href="/esg.html" target="_blank"
+                        >ESG</a
                       >
                     </li>
                   </ul>
@@ -574,33 +556,17 @@
                     <li class="item">
                       <a
                         class="dropdown-item"
-                        href="https://modelo.riprisma.com/diretoria-e-conselho"
-                        target="_self"
-                        >Diretoria e Conselho</a
+                        href="./privateEquity.html"
+                        target="_blank"
+                        >Private Equity</a
                       >
                     </li>
                     <li class="item">
                       <a
                         class="dropdown-item"
-                        href="https://modelo.riprisma.com/modelo-de-governanca"
-                        target="_self"
-                        >Modelo de Governança</a
-                      >
-                    </li>
-                    <li class="item">
-                      <a
-                        class="dropdown-item"
-                        href="https://modelo.riprisma.com/estatutos-e-politicas"
-                        target="_self"
-                        >Estatutos e Políticas</a
-                      >
-                    </li>
-                    <li class="item">
-                      <a
-                        class="dropdown-item"
-                        href="https://modelo.riprisma.com/perfil-corporativo"
-                        target="_self"
-                        >Perfil Corporativo</a
+                        href="./credito.html"
+                        target="_blank"
+                        >Credit</a
                       >
                     </li>
                   </ul>
@@ -608,64 +574,15 @@
 
                 <li class="dropdown header-navigation-item canalPai">
                   <a
-                    href="javascript:void(0);"
+                    href="equipe.html"
                     type="button"
                     class="dropdown-toggle"
                     id="menu-item-3"
                     aria-expanded="false"
                     data-bs-toggle="dropdown"
+                    target="_blank"
                     >EQUIPE</a
                   >
-                  <ul class="dropdown-menu" aria-labelledby="menu-item-3">
-                    <li class="item">
-                      <a
-                        class="dropdown-item"
-                        href="https://modelo.riprisma.com/central-de-resultados"
-                        target="_self"
-                        >Central de Resultados</a
-                      >
-                    </li>
-                    <li class="item">
-                      <a
-                        class="dropdown-item"
-                        href="https://modelo.riprisma.com/#"
-                        target="_self"
-                        >Gráficos e Cotações</a
-                      >
-                    </li>
-                    <li class="item">
-                      <a
-                        class="dropdown-item"
-                        href="https://modelo.riprisma.com/fatores-de-risco-do-negocio"
-                        target="_self"
-                        >Fatores de Risco do Negócio</a
-                      >
-                    </li>
-                    <li class="item">
-                      <a
-                        class="dropdown-item"
-                        href="https://modelo.riprisma.com/#"
-                        target="_self"
-                        >Cobertura de Analistas</a
-                      >
-                    </li>
-                    <li class="item">
-                      <a
-                        class="dropdown-item"
-                        href="https://modelo.riprisma.com/ListaAgenda.aspx?idCanal=IUEHf6pSdDDa4hnVqIdGKw=="
-                        target="_self"
-                        >Calendário de Eventos</a
-                      >
-                    </li>
-                    <li class="item">
-                      <a
-                        class="dropdown-item"
-                        href="https://modelo.riprisma.com/documentos-cvm"
-                        target="_self"
-                        >Documentos CVM</a
-                      >
-                    </li>
-                  </ul>
                 </li>
 
                 <li class="dropdown header-navigation-item canalPai">
@@ -682,17 +599,26 @@
                     <li class="item">
                       <a
                         class="dropdown-item"
-                        href="https://modelo.riprisma.com/fale-com-RI"
-                        target="_self"
-                        >Fale com RI</a
+                        href="fale-conosco.html"
+                        target="_blank"
+                        >Fale conosco</a
                       >
                     </li>
                     <li class="item">
                       <a
                         class="dropdown-item"
-                        href="cadastre-se-no-mailing"
-                        target="_self"
-                        >Cadastre-se no Mailing</a
+                        href="carreira.html"
+                        target="_blank"
+                        >Carreira</a
+                      >
+                    </li>
+
+                    <li class="item">
+                      <a
+                        class="dropdown-item"
+                        href="carreira.html"
+                        target="_blank"
+                        >Canal de Denúncias</a
                       >
                     </li>
                   </ul>
@@ -827,7 +753,11 @@
         <div class="cards-credito-content">
           <div class="cards-credito">
             <h3>Estratégia Mista</h3>
-            <img src="images/Rectangle-cred.png" alt="" />
+            <img
+              src="images/Rectangle-cred.png"
+              class="imagem-transicao"
+              alt=""
+            />
             <p>
               Fundos de crédito privado high grade que visam obter rentabilidade
               diferenciada por meio de alocação de parte da carteira (10-40%) em
@@ -837,7 +767,11 @@
 
           <div class="cards-credito">
             <h3>Estruturados</h3>
-            <img src="images/Rectangle-cred.png" alt="" />
+            <img
+              src="images/Rectangle-cred.png"
+              class="imagem-transicao"
+              alt=""
+            />
             <p>
               Multi-ativos: fundos focados em ativos estruturados, inclusive de
               forma proprietária, com perfil high grade e high yield
@@ -850,7 +784,11 @@
 
           <div class="cards-credito">
             <h3>Estressados</h3>
-            <img src="images/Rectangle-cred.png" alt="" />
+            <img
+              src="images/Rectangle-cred.png"
+              class="imagem-transicao"
+              alt=""
+            />
             <p>
               Atuação na recuperação de ativos estressados (ex. negociação de
               acordos, venda no secundário, execução de garantias e destinação
@@ -862,23 +800,35 @@
     </div>
 
     <div class="tabs-credito-container">
-      <div class="container container-tabs-home">
-        <div class="container">
-          <div class="tab-wrap">
-            <input
-              type="radio"
-              id="tab1"
-              name="tabGroup1"
-              class="tab"
-              checked=""
-            />
-            <label for="tab1">FUNDOS LISTADOS</label>
+      <div class="container itens-home-tab">
+        <div class="">
+          <ul class="nav nav-tabs" id="myTabs">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="tab10-tab"
+                data-toggle="tab"
+                href="#tab10-trade"
+                >Fundos Listados</a
+              >
+            </li>
 
-            <input type="radio" id="tab2" name="tabGroup1" class="tab" />
-            <label for="tab2">FUNDOS PRIVADOS</label>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="tab11-tab"
+                data-toggle="tab"
+                href="#tab11-trade"
+                >Fundos Privados</a
+              >
+            </li>
+          </ul>
+        </div>
 
-            <div class="tab__content">
-              <div class="infos-tab-credito">
+        <div class="tab-content">
+          <div class="tab-pane fade active show" id="tab10-trade">
+            <div class="container-infos-credito-tab">
+              <div class="infos-credito-tab">
                 <small>FIP IE | BRZP11</small>
                 <h3>
                   Conheça também o <br /><strong>BRZ Infra Portos</strong>
@@ -891,42 +841,78 @@
                   Brasil, o Porto Itapoá
                 </p>
 
-                <a class="button">
-                  <span class="button-decor"></span>
-                  <div class="button-content">
-                    <div class="button__icon">
-                      <img src="images/icons/carbon_arrow-right.png" alt="" />
+                <div class="others-infos-tab">
+                  <a class="button">
+                    <span class="button-decor"></span>
+                    <div class="button-content">
+                      <div class="button__icon">
+                        <img src="images/icons/carbon_arrow-right.png" alt="" />
+                      </div>
+                      <span class="button__text texts-tab-icon"
+                        >Conheça a BRZ infra Portos</span
+                      >
                     </div>
-                    <span class="button__text texts-tab-icon"
-                      >Conheça a BRZ Infra Portos</span
-                    >
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
 
-              <div class="cards-tab-credito">
-                <div class="cards-tab-c">
-                  <img src="images/icons/icon-capacidade.png" alt="" />
-                  <p>
-                    Capacidade atual de 1,2 milhão de TEUs com potencial futuro,
-                    dentro da área atual, para mais de 2,0 milhões de TEUs
-                  </p>
-                </div>
+              <div class="cards-infos-credito">
+                <div class="cards-tab-credito">
+                  <div class="cards-tab-c">
+                    <img src="images/icons/icon-capacidade.png" alt="" />
+                    <p>
+                      Capacidade atual de 1,2 milhão de TEUs com potencial
+                      futuro, dentro da área atual, para mais de 2,0 milhões de
+                      TEUs
+                    </p>
+                  </div>
 
-                <div class="cards-tab-c">
-                  <img src="images/icons/icon-equipamentos.png" alt="" />
-                  <p>Equipamentos capazes de atender os super navios</p>
-                </div>
+                  <div class="cards-tab-c">
+                    <img src="images/icons/icon-equipamentos.png" alt="" />
+                    <p>Equipamentos capazes de atender os super navios</p>
+                  </div>
 
-                <div class="cards-tab-c">
-                  <img src="images/icons/icon-servicos.png" alt="" />
-                  <p>Serviços para todos os continentes</p>
+                  <div class="cards-tab-c">
+                    <img src="images/icons/icon-servicos.png" alt="" />
+                    <p>Serviços para todos os continentes</p>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="tab__content">
-             Aguardando conteudo
+          <div class="tab-pane fade" id="tab11-trade">
+            <div class="container-infos-credito-tab">
+              <div class="infos-credito-tab">
+                <small>FIP IE | BRZP11</small>
+                <h3>
+                  Entre em contato com <br />
+                  <strong
+                    >a nossa equipe para mais <br />
+                    informações</strong
+                  >
+                </h3>
+
+                <div class="others-infos-tab">
+                  <a class="button">
+                    <span class="button-decor"></span>
+                    <div class="button-content">
+                      <div class="button__icon">
+                        <img src="images/icons/carbon_arrow-right.png" alt="" />
+                      </div>
+                      <span class="button__text texts-tab-icon"
+                        >Conheça a BRZ infra Portos</span
+                      >
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="cards-infos-credito-2">
+                <img src="images/header-fale-conosco.jpg" alt="" />
+                <img src="images/header-private-equity.jpg" alt="" />
+                <img src="images/header-quem-somos.jpg" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -1014,9 +1000,9 @@
             <li>
               <a href="./politica-de-privacidade"> Política de Privacidade </a>
             </li>
-            <li>
+            <!-- <li>
               <a href="./notas-legais"> Notas Legais </a>
-            </li>
+            </li> -->
           </ul>
           <p class="byRiweb">
             <a target="_blank" href="https://www.riprisma.com/"
@@ -1035,11 +1021,7 @@
         <aside class="mobile-menu">
           <div class="header-menu">
             <picture class="branding">
-              <img
-                class="logo-mobile"
-                src="./images/logo-prisma-branca.svg"
-                alt="Prisma"
-              />
+              <img class="logo-mobile" src="" alt="Prisma" />
             </picture>
             <div class="div-menu-open">
               <p>Fechar</p>
@@ -1119,28 +1101,28 @@
                       <li class="item">
                         <a
                           href="https://modelo.riprisma.com/Videos"
-                          target="_self"
+                          target="_blank"
                           >Vídeos</a
                         >
                       </li>
                       <li class="item">
                         <a
                           href="https://modelo.riprisma.com/quem-somos"
-                          target="_self"
+                          target="_blank"
                           >Quem Somos</a
                         >
                       </li>
                       <li class="item">
                         <a
                           href="https://modelo.riprisma.com/missao-visao-e-valores"
-                          target="_self"
+                          target="_blank"
                           >Missão, Visão e Valores</a
                         >
                       </li>
                       <li class="item">
                         <a
                           href="https://modelo.riprisma.com/historico"
-                          target="_self"
+                          target="_blank"
                           >Histórico</a
                         >
                       </li>
@@ -1170,28 +1152,28 @@
                       <li class="item">
                         <a
                           href="https://modelo.riprisma.com/diretoria-e-conselho"
-                          target="_self"
+                          target="_blank"
                           >Diretoria e Conselho</a
                         >
                       </li>
                       <li class="item">
                         <a
                           href="https://modelo.riprisma.com/modelo-de-governanca"
-                          target="_self"
+                          target="_blank"
                           >Modelo de Governança</a
                         >
                       </li>
                       <li class="item">
                         <a
                           href="https://modelo.riprisma.com/estatutos-e-politicas"
-                          target="_self"
+                          target="_blank"
                           >Estatutos e Políticas</a
                         >
                       </li>
                       <li class="item">
                         <a
                           href="https://modelo.riprisma.com/perfil-corporativo"
-                          target="_self"
+                          target="_blank"
                           >Perfil Corporativo</a
                         >
                       </li>
@@ -1221,38 +1203,38 @@
                       <li class="item">
                         <a
                           href="https://modelo.riprisma.com/central-de-resultados"
-                          target="_self"
+                          target="_blank"
                           >Central de Resultados</a
                         >
                       </li>
                       <li class="item">
-                        <a href="https://modelo.riprisma.com/#" target="_self"
+                        <a href="https://modelo.riprisma.com/#" target="_blank"
                           >Gráficos e Cotações</a
                         >
                       </li>
                       <li class="item">
                         <a
                           href="https://modelo.riprisma.com/fatores-de-risco-do-negocio"
-                          target="_self"
+                          target="_blank"
                           >Fatores de Risco do Negócio</a
                         >
                       </li>
                       <li class="item">
-                        <a href="https://modelo.riprisma.com/#" target="_self"
+                        <a href="https://modelo.riprisma.com/#" target="_blank"
                           >Cobertura de Analistas</a
                         >
                       </li>
                       <li class="item">
                         <a
                           href="https://modelo.riprisma.com/ListaAgenda.aspx?idCanal=IUEHf6pSdDDa4hnVqIdGKw=="
-                          target="_self"
+                          target="_blank"
                           >Calendário de Eventos</a
                         >
                       </li>
                       <li class="item">
                         <a
                           href="https://modelo.riprisma.com/documentos-cvm"
-                          target="_self"
+                          target="_blank"
                           >Documentos CVM</a
                         >
                       </li>
@@ -1282,12 +1264,12 @@
                       <li class="item">
                         <a
                           href="https://modelo.riprisma.com/fale-com-RI"
-                          target="_self"
+                          target="_blank"
                           >Fale com RI</a
                         >
                       </li>
                       <li class="item">
-                        <a href="cadastre-se-no-mailing" target="_self"
+                        <a href="cadastre-se-no-mailing" target="_blank"
                           >Cadastre-se no Mailing</a
                         >
                       </li>
@@ -1361,11 +1343,18 @@
     <div id="cadastro" style="display: none"></div>
     <div id="cadastroUsuario" style="display: none"></div>
 
-    <script defer src="vendor/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script
+      rel="stylesheet"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
+
+    <!-- <script defer src="vendor/bootstrap.bundle.min.js"></script> -->
+    <!-- <script
       defer
       src="https://template.riprisma.com/prisma/js/storiesPrisma.min.js"
-    ></script>
+    ></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script defer src="vendor/counterup.js"></script>
@@ -1412,12 +1401,12 @@
       accesskey="9"
     ></a>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       //<![CDATA[
 
       var callBackFrameUrl =
         "/WebResource.axd?d=9veEvPM5djuaI0aGscWcysTZuzr4cZ7uF1XBxhE98ri1-LM_M9pWIyRSGNUqzRfT639-xIHny4KMkxOgfU-pfnXHzQssPi-31V5XyVyv3lg1&t=638343975423008439";
       WebForm_InitCallback(); //]]>
-    </script>
+    </script> -->
   </body>
 </html>

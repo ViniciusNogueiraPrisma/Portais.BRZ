@@ -24,6 +24,17 @@ body {
   }
 }
 
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  padding-right: var(--bs-gutter-x, 2rem);
+  padding-left: var(--bs-gutter-x, 2rem);
+}
+
 @media (min-width: 1500px) {
   .container {
     max-width: 1446px !important;

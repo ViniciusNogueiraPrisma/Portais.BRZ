@@ -24,7 +24,12 @@ body {
   }
 }
 
-
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 768px;
+  }
+}
 
 .container,
 .container-fluid,

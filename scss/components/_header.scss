@@ -506,11 +506,11 @@
 
       .toggle-mobile-menu {
         .icon-nav {
-          background-color: var(--text-color);
+          // background-color: var(--text-color);
 
           &::after,
           &::before {
-            background-color: var(--text-color);
+            // background-color: var(--text-color);
           }
         }
       }

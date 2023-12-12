@@ -290,6 +290,8 @@
 @media (min-width: 1500px) {
   .container-internas {
     max-width: 1152px !important;
+    padding-right: var(--bs-gutter-x, 1rem) !important;
+    padding-left: var(--bs-gutter-x, 1rem) !important;
   }
 }
 
@@ -300,6 +302,11 @@
     display: flex;
     gap: 24px;
     padding-bottom: 40px;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 0px;
+    }
 
     .texts-1 {
       h2 {
@@ -328,6 +335,12 @@
     display: flex;
     gap: 16px;
 
+    @media (max-width: 992px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     .brz-selos-imgs {
       background-color: #fafafa;
       padding: 32px 16px;
@@ -337,6 +350,14 @@
       justify-content: center;
       text-align: center;
       border-radius: 8px;
+
+      @media (max-width: 992px) {
+        width: 360px;
+      }
+
+      @media (max-width: 490px) {
+        width: 100%;
+      }
 
       h6 {
         color: #70737a;
@@ -400,6 +421,10 @@
   display: flex;
   justify-content: space-between;
   gap: 8px;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+  }
 
   .cards-prop {
     background-color: #70737a;
@@ -505,6 +530,7 @@
 .container-timeline-last {
   display: flex;
   flex-direction: column-reverse;
+  padding: 0px !important;
 }
 
 .nav-timeline .slick-prev {
@@ -630,6 +656,11 @@
     align-items: center;
     gap: 12px;
 
+    @media (max-width: 758px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
     span {
       color: #444444;
       font-size: 16px;
@@ -652,6 +683,10 @@
     img {
       opacity: 0.7;
       width: 12px;
+
+      @media (max-width: 758px) {
+        display: none;
+      }
     }
   }
 }
@@ -689,6 +724,14 @@
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   gap: 24px;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 763px) {
+    grid-template-columns: 1fr;
+  }
 
   .cards-tabs {
     border-radius: 4px;
@@ -1039,6 +1082,10 @@
 .cards-credito-content {
   display: flex;
 
+  @media (max-width: 1032px) {
+    flex-direction: column;
+  }
+
   .cards-credito {
     padding: 48px 32px;
     background-color: rgba(125, 125, 125, 0.9);
@@ -1047,6 +1094,14 @@
     width: 100%;
     height: 450px;
     transition: 0.4s;
+
+    @media (max-width: 1032px) {
+      margin-top: 0px;
+
+      &:first-child {
+        margin-top: 24px;
+      }
+    }
 
     &:first-child {
       border-top-left-radius: 4px;
@@ -1143,6 +1198,10 @@
 .cards-tab-credito {
   display: flex;
   gap: 16px;
+
+  @media (max-width: 1004px) {
+    flex-direction: column;
+  }
 
   .cards-tab-c {
     background-color: #eeeeee;
@@ -1528,6 +1587,10 @@
 .container-infos-credito-tab {
   display: flex;
   gap: 24px;
+
+  @media (max-width: 1268px) {
+    flex-direction: column;
+  }
 }
 
 .tab-pane {
@@ -1536,6 +1599,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 1268px) {
+      width: 100%;
+    }
 
     small {
       color: #999999;
@@ -1567,8 +1634,19 @@
   width: 19.5%;
   display: flex;
 
+  @media (max-width: 1268px) {
+    width: 100%;
+    // flex-direction: column;
+  }
+
   img {
     object-fit: cover;
+
+    @media (max-width: 1268px) {
+      width: 32%;
+      height: 255px;
+      // flex-direction: column;
+    }
   }
 }
 

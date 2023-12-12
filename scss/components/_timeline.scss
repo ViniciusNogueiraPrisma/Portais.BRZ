@@ -369,6 +369,10 @@
   align-items: center;
   width: 50%;
 
+  @media(max-width: 767px) {
+    width: 100%;
+  }
+
   h2 {
     color: white;
     font-size: 28px;

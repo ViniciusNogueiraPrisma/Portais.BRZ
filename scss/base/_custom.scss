@@ -38,8 +38,8 @@ body {
 .container-sm,
 .container-xl,
 .container-xxl {
-  padding-right: var(--bs-gutter-x, 2rem);
-  padding-left: var(--bs-gutter-x, 2rem);
+  padding-right: var(--bs-gutter-x, 2rem) !important;
+  padding-left: var(--bs-gutter-x, 2rem) !important;
 
   @media (max-width: 768px) {
     padding-right: var(--bs-gutter-x, 2rem);

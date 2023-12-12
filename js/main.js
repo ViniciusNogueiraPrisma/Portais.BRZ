@@ -9,15 +9,15 @@ function debounce(callback, delay) {
   };
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  var openModalLinks = document.querySelectorAll('.open-modal');
+document.addEventListener("DOMContentLoaded", function () {
+  var openModalLinks = document.querySelectorAll(".open-modal");
 
-  openModalLinks.forEach(function(link) {
-    link.addEventListener('click', function(event) {
+  openModalLinks.forEach(function (link) {
+    link.addEventListener("click", function (event) {
       event.preventDefault(); // Impede o comportamento padrão do link
 
       // Obtém o atributo data-bs-target do link
-      var targetModalId = link.getAttribute('data-bs-target');
+      var targetModalId = link.getAttribute("data-bs-target");
 
       // Verifica se o atributo existe antes de continuar
       if (targetModalId) {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
           var targetModal = new bootstrap.Modal(targetModalElement);
           targetModal.show();
         } else {
-          console.error('Modal element not found:', targetModalId);
+          console.error("Modal element not found:", targetModalId);
         }
       }
     });
@@ -54,6 +54,33 @@ $(".open-searchbox, .close-searchbox").click(function () {
 });
 
 // manages the status of the mobile menu.
+
+document.addEventListener("DOMContentLoaded", function () {
+  var buttonMapaSite = document.querySelector(".button-mapa-site");
+  var collapseMapSite = document.getElementById("collapseMapSite");
+
+  buttonMapaSite.addEventListener("click", function () {
+    if ($(collapseMapSite).hasClass("show")) {
+      collapseMapSite.addEventListener("hidden.bs.collapse", function () {
+        collapseMapSite.style.height = "";
+        collapseMapSite.style.transition = "";
+      });
+
+      $(collapseMapSite).collapse("hide");
+    } else {
+      collapseMapSite.addEventListener("show.bs.collapse", function () {
+        collapseMapSite.style.height = "auto";
+        collapseMapSite.style.transition = "height 0.3s ease-out";
+      });
+
+      collapseMapSite.addEventListener("shown.bs.collapse", function () {
+        collapseMapSite.style.transition = "";
+      });
+
+      $(collapseMapSite).collapse("show");
+    }
+  });
+});
 
 $(".toggle-mobile-menu").click(function () {
   $(".mobile-menu-div").toggleClass("active");

@@ -24,6 +24,8 @@ body {
   }
 }
 
+
+
 .container,
 .container-fluid,
 .container-lg,
@@ -33,7 +35,19 @@ body {
 .container-xxl {
   padding-right: var(--bs-gutter-x, 2rem);
   padding-left: var(--bs-gutter-x, 2rem);
+
+  @media (max-width: 768px) {
+    padding-right: var(--bs-gutter-x, 2rem);
+    padding-left: var(--bs-gutter-x, 2rem);
+  }
 }
+
+// @media (min-width: 576px) {
+//   .container,
+//   .container-sm {
+//     max-width: 624px !important;
+//   }
+// }
 
 @media (min-width: 1500px) {
   .container {

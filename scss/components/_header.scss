@@ -14,9 +14,9 @@
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 991px) {
-      flex-wrap: wrap;
-    }
+    // @media (max-width: 991px) {
+    //   flex-wrap: wrap;
+    // }
 
     @media (max-width: 468px) {
       gap: 20px;
@@ -135,10 +135,10 @@
       display: flex;
       align-items: center;
 
-      @media (max-width: 468px) {
-        width: 100%;
-        justify-content: space-between;
-      }
+      // @media (max-width: 468px) {
+      //   width: 100%;
+      //   justify-content: space-between;
+      // }
 
       .button-login-header {
         margin-right: 32px;

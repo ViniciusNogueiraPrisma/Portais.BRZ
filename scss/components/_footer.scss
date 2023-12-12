@@ -12,6 +12,11 @@
     gap: 8px;
     flex-wrap: wrap;
 
+    @media (max-width: 991px) {
+      align-items: unset;
+      gap: 16px;
+    }
+
     @media (max-width: 450px) {
       gap: 19px;
     }
@@ -43,6 +48,10 @@
       img {
         flex-shrink: 0;
         margin-left: 12px;
+
+        @media (max-width: 991px) {
+          margin-left: 0px;
+        }
       }
     }
 
@@ -94,6 +103,19 @@
   }
 }
 
+.last-map-footer {
+  display: none;
+
+  @media (max-width: 1199px) {
+    display: block;
+
+    .top-footer-fixed {
+      display: flex !important;
+      padding-bottom: 16px;
+    }
+  }
+}
+
 .footer-fixed {
   position: relative;
   bottom: 0;
@@ -110,7 +132,7 @@
   }
 
   .top-footer-fixed {
-    display: flex;
+    display: none;
     align-items: center;
 
     .iframe-cotacoes {

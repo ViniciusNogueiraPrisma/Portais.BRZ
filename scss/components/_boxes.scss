@@ -490,10 +490,13 @@
 
   h3 {
     margin-top: 0;
+    color: var(--text-main-color);
+    font-family: var(--font-roboto-slab);
   }
 
   small {
     display: block;
+    font-family: var(--font-sans);
   }
 
   .primary-button {

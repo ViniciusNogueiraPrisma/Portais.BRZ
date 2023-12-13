@@ -366,6 +366,8 @@
         font-weight: 700;
         line-height: 25.2px;
         word-wrap: break-word;
+        margin: 0;
+        padding-top: 16px;
       }
     }
   }
@@ -394,27 +396,27 @@
   }
 }
 
-.cards-prop:nth-child(3) {
-  &:hover {
-    background-color: #ed7d31;
-    transition: 0.5s ease;
+// .cards-prop:nth-child(3) {
+//   &:hover {
+//     background-color: #ed7d31;
+//     transition: 0.5s ease;
 
-    h4 {
-      transform: translateX(5%) !important;
-    }
-  }
-}
+//     h4 {
+//       transform: translateX(5%) !important;
+//     }
+//   }
+// }
 
-.cards-prop:nth-child(4) {
-  &:hover {
-    background-color: #ed7d31;
-    transition: 0.5s ease;
+// .cards-prop:nth-child(4) {
+//   &:hover {
+//     background-color: #ed7d31;
+//     transition: 0.5s ease;
 
-    h4 {
-      transform: translateX(93%) !important;
-    }
-  }
-}
+//     h4 {
+//       transform: translateX(93%) !important;
+//     }
+//   }
+// }
 
 .cards-prop-container {
   padding-top: 40px;
@@ -439,20 +441,20 @@
       transition: 0.5s ease;
       // text-align: center;
 
-      h4 {
-        transform: translateX(32%);
-      }
+      // h4 {
+      //   transform: translateX(32%);
+      // }
 
-      .imgs-card-prop {
-        img {
-          transform: translateX(150%) translateY(0);
-          transition: 0.4s;
+      // .imgs-card-prop {
+      //   img {
+      //     transform: translateX(150%) translateY(0);
+      //     transition: 0.4s;
 
-          @media (max-width: 1499px) {
-            transform: translateX(100%) translateY(0);
-          }
-        }
-      }
+      //     @media (max-width: 1499px) {
+      //       transform: translateX(100%) translateY(0);
+      //     }
+      //   }
+      // }
     }
 
     &:last-child {
@@ -789,6 +791,18 @@
 }
 
 .container-tabs-private {
+  .itens-home-tab {
+    .container-txt-tabs {
+      padding: 0px !important;
+    }
+
+    .nav-tabs {
+      @media (max-width: 508px) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
   .container-tabs-home {
     padding: 0;
 
@@ -1111,6 +1125,10 @@
 
     &:nth-child(2) {
       background-color: #918f8fe5;
+
+      p {
+        margin-top: 24px;
+      }
     }
 
     &:last-child {
@@ -1195,6 +1213,10 @@
   }
 }
 
+.modal-backdrop.show {
+  opacity: 0.7 !important;
+}
+
 .cards-tab-credito {
   display: flex;
   gap: 16px;
@@ -1224,6 +1246,7 @@
       font-weight: 400;
       line-height: 24.8px;
       word-wrap: break-word;
+      margin-bottom: 0px;
     }
   }
 }
@@ -1331,7 +1354,7 @@
       color: #222222;
       font-size: 12px;
       font-family: var(--font-sans);
-      font-weight: 400;
+      font-weight: 500;
       line-height: 15.84px;
       word-wrap: break-word;
       margin-bottom: 8px;
@@ -1374,6 +1397,10 @@
   align-items: center;
 
   a {
+    @media (max-width: 700px) {
+      font-size: 15px !important;
+    }
+
     &:first-child {
       // Limpar
       color: #111111;
@@ -1381,7 +1408,6 @@
       text-decoration: none;
       font-family: var(--font-sans);
       font-weight: 400;
-      line-height: 24.8px;
       word-wrap: break-word;
       border-radius: 8px;
       border: 1px solid #111111;
@@ -1438,6 +1464,10 @@
   display: flex;
   gap: 24px;
 
+  @media (max-width: 1018px) {
+    flex-direction: column;
+  }
+
   .cards-carreira {
     border-radius: 4px;
     background-color: #fafafa;
@@ -1472,7 +1502,7 @@
       transition: 0.4s;
 
       width: 56px;
-      margin-bottom: 40px;
+      margin-bottom: 25px;
     }
 
     a {
@@ -1542,6 +1572,13 @@
 
   .itens-home-tab {
     width: 100%;
+
+    .nav-tabs {
+      @media (max-width: 464px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
 
     .nav-item {
       .nav-link {
@@ -1647,7 +1684,6 @@
     @media (max-width: 1268px) {
       width: 32%;
       height: 255px;
-
     }
   }
 }
@@ -1675,4 +1711,52 @@
     rgba(237, 125, 49, 1) 0%,
     rgba(255, 255, 255, 0) 94%
   );
+}
+.txts-denuncias {
+  p {
+    color: #666666;
+    font-size: 16px;
+    font-family: var(--font-sans);
+    font-weight: 400;
+    line-height: 24.8px;
+    word-wrap: break-word;
+  }
+}
+
+.cmb-denuncias {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    color: #1d1d1d;
+    font-size: 14px;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    line-height: 19.6px;
+    word-wrap: break-word;
+    padding-bottom: 8px;
+    padding-left: 12px;
+  }
+
+  textarea {
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 4px;
+  }
+
+  textarea::placeholder {
+    padding: 12px;
+  }
+}
+
+.btns-denuncias {
+  margin-top: 32px;
+
+  .primary-button {
+    gap: 8px;
+
+    img {
+      width: 16px;
+    }
+  }
 }

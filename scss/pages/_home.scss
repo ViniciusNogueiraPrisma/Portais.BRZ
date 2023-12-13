@@ -243,8 +243,8 @@
 
   .primary-button {
     border: 1px solid;
-    border: 1px solid #1d1d1d !important;
-    background-color: #1d1d1d !important;
+    border: 1px solid var(----text-main-color) !important;
+    background-color: var(----text-main-color) !important;
     color: #fff !important;
   }
 
@@ -294,9 +294,6 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-  }
-
-  .container-infos-banner {
   }
 
   .infos-banner-home {
@@ -788,7 +785,7 @@
     align-items: center;
     margin: 0;
     padding: 0;
-    gap: 16px;
+    // gap: 16px;
     flex-wrap: unset ;
   }
 

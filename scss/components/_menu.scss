@@ -80,7 +80,7 @@ body {
       display: flex;
       gap: 8px;
       padding: 6px;
-      border: 1px solid var(--text-black);
+      border: 1px solid #666;
       border-radius: 4px;
 
       button {
@@ -90,7 +90,7 @@ body {
 
         i {
           &::before {
-            color: black;
+            color: #666;
           }
         }
       }
@@ -102,10 +102,10 @@ body {
         font-family: var(--font-text-2);
         width: 100%;
         background: none;
-        color: black;
+        color: #666;
 
         &::placeholder {
-          color: black;
+          color: #666;
         }
       }
     }

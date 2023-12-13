@@ -412,6 +412,8 @@
     gap: 16px;
     justify-content: space-between;
     flex-direction: unset;
+    margin-top: 40px;
+    margin-bottom: 40px;
 
     @media(max-width: 878px) {
       flex-direction: column-reverse;

@@ -64,193 +64,412 @@
 
 //ajustes
 [data-theme="dark"] {
-  .avisos-container .dropdown-menu-alerta .list-avisos a {
-    span {
-      color: #000;
-    }
-
-    p {
-      color: #000;
-    }
+  .header {
+    background-color: #1d1d1d;
   }
 
-  .headerFixoMenu.menu-bar:not(.not-transparent) .header button img {
-    filter: none !important;
+  .header .content .logo-header img {
+    filter: contrast(1) brightness(18);
   }
 
-  .menu-bar .content .header-right-side .button-storys-open {
-    border: none;
+  .header
+    .content
+    .nav-menu-header
+    > ul
+    .header-navigation-item
+    .dropdown-toggle {
+    color: white;
   }
 
-  .icon-exibir {
-    filter: contrast(0.5) brightness(18.5);
+  .header .content .header-right-side .open-searchbox .icon-busca::before {
+    color: white;
   }
 
-  .buttons-group {
-    a {
-      background-color: #1d1d1d;
-      border: 1px solid var(--text-white);
-    }
-  }
+  .area-restrista a {
+    color: white;
 
-  .disclaimer {
-    a {
-      color: #008bff !important;
-    }
-  }
-
-  .logo-colorida {
-    filter: contrast(0.5) brightness(18);
-  }
-
-  #loginModal {
-    .modal-dialog {
-      .modal-content {
-        .header-modal {
-          h2 {
-            color: #000;
-          }
-        }
-
-        .modal-body {
-          p {
-            color: #000;
-          }
-        }
-      }
-    }
-  }
-
-  .form-login {
-    .div-input {
-      border: 1px solid #000;
-
-      label {
-        color: #000;
-      }
-    }
-  }
-
-  .link-com-arrow::after,
-  .link-com-download::after {
-    filter: contrast(0.5) brightness(18);
-  }
-
-  .flex-compartilhar {
     img {
-      filter: contrast(0.5) brightness(18);
+      filter: contrast(1) brightness(18);
     }
   }
 
-  .headerFixoMenu.not-transparent {
-    .header-right-side {
-      .button-login-header {
-        img {
-          filter: contrast(7.5) brightness(18) !important;
-        }
-      }
-
-      .button-storys-open {
-        border: none;
-
-        img {
-          filter: contrast(7.5) !important;
-        }
-      }
-    }
+  .num-brz {
+    background-color: #1d1d1d;
   }
 
-  .list-paginacao li.active a {
-    border: 1px solid white !important;
+  .container-brz .first-infos small {
+    color: white;
   }
 
-  .ui-datepicker-header .ui-corner-all .ui-icon::after {
-    filter: contrast(0.5) brightness(18);
+  .tabs-home {
+    background-color: #1d1d1d;
   }
 
-  .list-downloads li > div > img {
-    filter: contrast(0.5) brightness(18);
+  .itens-home-tab .nav-link.active {
+    color: white;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fff !important;
   }
 
-  .form-select-filtro select {
-    filter: contrast(0.5) brightness(18);
+  .itens-home-tab .nav-link {
+    color: white;
   }
 
-  .form-login > a {
-    color: var(--primary-01-var-2) !important;
+  .itens-home-tab .tab-pane span {
+    color: white;
   }
 
-  .form-login button {
-    color: var(--text-color) !important;
+  .itens-home-tab .tab-pane h3 {
+    color: white;
   }
 
-  .form-login button:hover {
-    color: var(--text-white) !important;
+  .itens-home-tab .tab-pane p {
+    color: white;
   }
 
-  .table tbody tr td {
-    color: var(--text-white) !important;
+  .itens-home-tab .tab-pane .texts-infos-tab h4 {
+    color: white;
   }
 
-  .table tbody tr td.not-active img {
-    filter: contrast(0.5) brightness(18);
+  .itens-home-tab .tab-pane .texts-infos-tab p {
+    color: white;
   }
 
-  .form-login button:hover {
-    background-color: var(--primary-01-var-2);
+  .nav-tabs .nav-link:focus,
+  .nav-tabs .nav-link:hover {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fff !important;
   }
 
-  .form-login .create-account-link a:hover {
-    color: #000 !important;
+  .footer-fixed {
+    background-color: #1d1d1d;
   }
 
-  .nav-timeline .slick-current.item::after {
-    background-color: #008bff !important;
+  .footer {
+    background-color: #1d1d1d;
   }
 
-  .form-mailing-home button {
-    background-color: var(--text-white);
-    color: var(--grey-scale-00);
+  .header
+    .content
+    .nav-menu-header
+    > ul
+    .header-navigation-item
+    .dropdown-toggle.active {
+    color: #fff !important;
   }
 
-  .mailing-home-1 button {
-    color: var(--grey-scale-00) !important;
-  }
-
-  .primary-button {
-    color: var(--text-white) !important;
-  }
-
-  .primary-button:hover {
-    color: #000 !important;
-  }
-
-  .info-result-banner > a {
-    color: #000 !important;
-  }
-
-  .mailing-3 {
-    .div-input {
-      input::placeholder {
-        color: #fff !important;
-      }
-    }
-  }
-
-  .accordion .accordion-header button:not(.collapsed) {
-    background-color: #fff;
-    color: #000;
-  }
-
-  .accordion .accordion-header button.collapsed:hover {
+  .header-navigation-item:after {
     background-color: #fff !important;
   }
 
-  .accordion .accordion-header button::after {
-    color: var(--grey-scale-00);
+  .header
+    .content
+    .nav-menu-header
+    > ul
+    .header-navigation-item
+    .dropdown-menu {
+    background-color: #1d1d1d;
   }
 
-  .buttons-group a:hover {
-    color: #fff !important;
+  .dropdown-menu::before {
+    background-color: #1d1d1d;
+  }
+
+  .texts-sobre-nos .brz-desafios .texts-1 h2 {
+    color: #fff;
+  }
+
+  .texts-sobre-nos .brz-desafios .texts-2 p {
+    color: #fff;
+  }
+
+  .texts-sobre-nos .brz-selos .brz-selos-imgs {
+    background-color: #282828;
+  }
+
+  .brz-selos-imgs img {
+    filter: grayscale(1) brightness(14.5);
+  }
+
+  .section-propostas {
+    background-color: #1d1d1d;
+  }
+
+  .texts-sobre-nos .brz-selos .brz-selos-imgs h6 {
+    color: white;
+  }
+
+  .cards-prop-container .cards-prop {
+    background-color: #282828;
+
+    &:hover {
+      background-color: #282828;
+    }
+  }
+
+  .timeline-sobre {
+    background-color: #1d1d1d;
+  }
+
+  .cards-prop-container .cards-prop:last-child {
+    background-color: #282828;
+  }
+
+  .nav-timeline .slick-current.item span {
+    color: #fff;
+  }
+
+  .nav-timeline .slick-current.item::after {
+    color: #fff;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+
+  .item.slick-slide.slick-current.slick-active {
+    border-top: 2px solid #fff;
+  }
+
+  .container-esg .cultura-esg h2 {
+    color: #fff;
+  }
+
+  .container-esg .cultura-esg p {
+    color: #fff;
+  }
+
+  .container-esg-tabs {
+    background-color: #1d1d1d;
+  }
+
+  .container-esg-tabs h3 {
+    color: #fff;
+  }
+
+  .list-downloads-brz .title-downloads h2 {
+    color: #fff;
+  }
+
+  .list-downloads-itens .first-infos-downloads span {
+    color: #fff;
+  }
+
+  .list-downloads-itens .first-infos-downloads p {
+    color: #fff;
+  }
+
+  .list-downloads-itens .first-infos-downloads img {
+    filter: grayscale(1) brightness(18);
+  }
+
+  .list-downloads-itens:hover .icons-infos-downloads .img-fixed-d {
+    filter: grayscale(1) brightness(18);
+  }
+
+  .icons-infos-downloads .img-d-hover {
+    filter: grayscale(1) brightness(18);
+  }
+
+  .icons-infos-downloads .img-fixed-d {
+    filter: grayscale(1) brightness(18);
+  }
+
+  .container-cards-tabs .cards-tabs .infos-cards-tabs {
+    background-color: #282828;
+    border: 1px solid #282828;
+  }
+
+  .container-cards-tabs .cards-tabs .infos-cards-tabs h6 {
+    color: #fff;
+  }
+
+  .container-cards-tabs .cards-tabs .infos-cards-tabs small {
+    background-color: #282828;
+    color: #fff;
+  }
+
+  .cards-credito {
+    background-color: #282828 !important;
+
+    &:hover {
+      background: #282828 !important;
+    }
+  }
+
+  .tabs-credito-container {
+    background-color: #1d1d1d;
+  }
+
+  .cards-tab-credito .cards-tab-c {
+    background-color: #282828;
+    border: 1px solid #282828;
+  }
+
+  .cards-credito-content .cards-credito img {
+    filter: grayscale(1) brightness(18);
+  }
+
+  .cards-credito-container .cards-credito-title h2 {
+    color: #fff;
+  }
+
+  .cards-tab-credito .cards-tab-c img {
+    filter: grayscale(1) brightness(18);
+  }
+
+  .container-equipe h2 {
+    color: #fff;
+  }
+
+  .container-cards-equipe .cards-equipe .infos-equipe {
+    background-color: #282828;
+    border: 1px solid #282828;
+  }
+
+  .container-cards-equipe .cards-equipe .infos-equipe h5 {
+    color: #fff;
+  }
+
+  .container-cards-equipe .cards-equipe .infos-equipe p {
+    color: #fff;
+  }
+
+  .container-contatos h2 {
+    color: #fff;
+  }
+
+  .container-inputs-contatos .inputs-contatos label {
+    color: #fff;
+  }
+
+  .btns-contatos a:nth-child(2) {
+    background-color: #282828;
+  }
+
+  .btns-contatos a:nth-child(1) {
+    background-color: #282828;
+    color: white;
+  }
+
+  .container-carreira h2 {
+    color: white;
+  }
+
+  .cards-carreira-content .cards-carreira {
+    background-color: #282828;
+    border: 1px solid #282828;
+
+    &:hover {
+      background-color: #282828;
+    }
+  }
+
+  .cards-carreira-content .cards-carreira img {
+    filter: grayscale(1) brightness(18);
+  }
+
+  .cards-carreira-content .cards-carreira h4 {
+    color: white;
+  }
+
+  .cards-carreira-content .cards-carreira a small {
+    color: white;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  .txts-denuncias p {
+    color: #fff;
+  }
+
+  .cmb-denuncias label {
+    color: #fff;
+  }
+
+  .primary-button {
+    background-color: #282828;
+    border: 1px solid #282828;
+
+    &:hover {
+      background-color: #282828;
+      border: 1px solid #282828;
+    }
+  }
+
+  .searchbox .input-group .input-group-text button [class^="icon-"]::before {
+    color: #fff;
+  }
+
+  .modal-content {
+    background-color: #282828;
+  }
+
+  .close span {
+    color: #fff;
+  }
+
+  .modal .modal-title {
+    color: #fff;
+  }
+
+  .modal .modal-title small {
+    color: #fff;
+  }
+
+  .modal .modal-texts p {
+    color: #fff;
+  }
+
+  .social-modal a {
+    color: #fff;
+
+    img {
+      filter: grayscale(1) brightness(18);
+    }
+  }
+
+  .container-fundos h2 {
+    color: #fff;
+  }
+
+  .container-fundos p {
+    color: #fff;
+  }
+
+  .fundos-amata .fundos-itens small {
+    color: #fff;
+  }
+
+  .fundos-amata .fundos-itens h3 {
+    color: #fff;
+  }
+
+  .infos-crc h2 {
+    color: #fff;
+  }
+
+  .content-amata .cards-crc-container .cards-crc {
+    background-color: #282828;
+    border: 1px solid #282828;
+  }
+
+  .content-amata .cards-crc-container .cards-crc span {
+    color: #fff;
+  }
+
+  .swiper-amata .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #fff !important;
+  }
+
+  .button-decor {
+    background-color: #282828 !important;
+    border: 1px solid #282828 !important;
+  }
+
+  .button {
+    border: 1px solid #282828 !important;
+  }
+
+  .button__icon img {
+    filter: grayscale(1);
   }
 }

@@ -367,6 +367,10 @@
 
   .itens-modal {
     width: 63%;
+
+    @media(max-width: 878px) {
+      width: 100%;
+    }
   }
 
   .modal-title {
@@ -395,6 +399,10 @@
       width: 323px;
       height: 450px;
       object-fit: cover;
+
+      @media(max-width: 878px) {
+        width: 100%;
+      }
     }
   }
 
@@ -404,6 +412,10 @@
     gap: 16px;
     justify-content: space-between;
     flex-direction: unset;
+
+    @media(max-width: 878px) {
+      flex-direction: column-reverse;
+    }
   }
   .modal-dialog {
     max-width: 1025px;

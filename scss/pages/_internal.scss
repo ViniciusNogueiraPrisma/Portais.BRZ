@@ -911,11 +911,22 @@
 .fundos-amata {
   display: flex;
   gap: 24px;
-  // justify-content: space-between;
   padding-top: 24px;
+
+  @media (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 
   .fundos-itens {
     width: 171px;
+
+    @media (max-width: 1199px) {
+      width: 166px;
+    }
+
+    @media (max-width: 991) {
+      width: auto;
+    }
 
     small {
       color: #6c7480;
@@ -987,6 +998,18 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 16px;
     padding-top: 16px;
+
+    @media (max-width: 1051px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (max-width: 737px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 450px) {
+      grid-template-columns: 1fr;
+    }
 
     .cards-crc {
       display: flex;
@@ -1273,14 +1296,13 @@
   gap: 24px;
   padding-top: 64px;
 
-  @media(max-width: 1018px) {
+  @media (max-width: 1018px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media(max-width: 630px)  {
+  @media (max-width: 630px) {
     grid-template-columns: 1fr;
   }
-  
 
   a {
     text-decoration: none;

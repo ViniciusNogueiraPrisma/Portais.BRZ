@@ -267,14 +267,14 @@
 
   &::before {
     content: "";
+    
     height: 749px;
-
-    background: rgb(237, 105, 49);
-    background: linear-gradient(
-      90deg,
-      rgba(237, 105, 49, 0.28895308123249297) 13%,
-      rgba(237, 125, 49, 0.07326680672268904) 19%
-    );
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 22%, rgba(0,0,0,0.3841911764705882) 56%);
+    background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 22%, rgba(0,0,0,0.3841911764705882) 56%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 22%, rgba(0,0,0,0.3841911764705882) 56%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    
     width: 100%;
     z-index: 0;
     display: flex;
@@ -299,7 +299,8 @@
   .infos-banner-home {
     padding-top: 100px;
     height: 749px;
-    width: 636px;
+    // width: 636px;
+    width: 703px;
     position: absolute;
     z-index: 2;
     display: flex;
@@ -786,7 +787,7 @@
     margin: 0;
     padding: 0;
     // gap: 16px;
-    flex-wrap: unset ;
+    flex-wrap: unset;
   }
 
   .nav-item {

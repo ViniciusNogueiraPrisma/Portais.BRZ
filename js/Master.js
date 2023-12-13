@@ -320,20 +320,20 @@ function abreLogin() {
     
 }
 
-function abreModalCadastro() {
-    $.post("CadastroUsuario.aspx",
-        function (data) {
-            $('#loginModal').hide();
-            $('#forgotModal').hide();
-            $('div[class*=modal-backdrop]').hide();
-            $("#alertasModal").remove();
-            $('#cadastroUsuario').html(data);
-            $('#modalCadastro').modal("show");
-            $('#cadastroUsuario').show();
-            activeInputsFocus();
-        });
+// function abreModalCadastro() {
+//     $.post("CadastroUsuario.aspx",
+//         function (data) {
+//             $('#loginModal').hide();
+//             $('#forgotModal').hide();
+//             $('div[class*=modal-backdrop]').hide();
+//             $("#alertasModal").remove();
+//             $('#cadastroUsuario').html(data);
+//             $('#modalCadastro').modal("show");
+//             $('#cadastroUsuario').show();
+//             activeInputsFocus();
+//         });
     
-}
+// }
 
 function captcha_onclick() {
     document.getElementById('recaptchaValidator').value = 'verdadeiro';

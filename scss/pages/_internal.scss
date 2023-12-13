@@ -1753,7 +1753,15 @@
   margin-top: 32px;
 
   .primary-button {
+    padding: 12px 20px;
+    border-radius: 8px;
     gap: 8px;
+    color: white;
+    font-size: 16px;
+    font-family: var(--font-sans);
+    font-weight: 200;
+    line-height: 24.8px;
+    word-wrap: break-word;
 
     img {
       width: 16px;

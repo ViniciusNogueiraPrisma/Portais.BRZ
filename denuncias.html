@@ -11,8 +11,8 @@
     <title></title>
     <meta name="description" content="Riweb - Relações com Investidores" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="shortcut icon" href="images/favicon-60px.png" sizes="60x60" />
-    <link rel="shortcut icon" href="images/favicon-76px.png" sizes="76x76" />
+    <link rel="shortcut icon" href="images/favicon-152px.png" sizes="60x60" />
+    <link rel="shortcut icon" href="images/favicon-152px.png" sizes="76x76" />
     <link
       rel="apple-touch-icon"
       href="images/apple-touch-120px.png"
@@ -23,11 +23,11 @@
       href="images/apple-touch-152px.png"
       sizes="152x152"
     />
+
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
-    <meta property="og:image" content=" " />
+    <meta property="og:image" content="./images/thumb.jpg" />
     <link preload="" rel="stylesheet" href="vendor/bootstrap.min.css" />
-    <!-- <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="vendor/basic-table.min.css" />
     <link rel="stylesheet" href="vendor/slick.min.css" />
     <link rel="stylesheet" href="vendor/slick-theme.min.css" />
@@ -213,6 +213,8 @@
 
     <script src="vendor/jquery.min.js"></script>
 
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+
     <!-- <link rel="manifest" href="manifest.json" /> -->
     <!-- <script src="../sw.js"></script> -->
 
@@ -370,7 +372,8 @@
           <div class="content">
             <!-- <div class="left-top-header">
                 <p>Relações com Investidores</p>
-                <a href="https://www.riweb.com.br/" target="_blank">
+                <a href="https://www.riweb.com.br/"                         target="_self"
+>
                   Site Institucional
                 </a>
               </div> -->
@@ -510,8 +513,16 @@
         <div class="container container-responsivo-full">
           <div class="content">
             <a class="logo-header" href="/" accesskey="1">
-              <img class="logo-white" src="./images/brz-logo.svg" alt="" />
-              <img class="logo-colorida" src="./images/brz-logo.svg" alt="" />
+              <img
+                class="logo-white"
+                src="https://www.brzinvestimentos.com.br/wp-content/uploads/sites/1014/2022/03/download-3.png"
+                alt=""
+              />
+              <img
+                class="logo-colorida"
+                src="https://www.brzinvestimentos.com.br/wp-content/uploads/sites/1014/2022/03/download-3.png"
+                alt=""
+              />
             </a>
             <nav class="nav-menu-header">
               <ul>
@@ -530,12 +541,12 @@
                       <a
                         class="dropdown-item"
                         href="./sobre-nos.html"
-                        target="_blank"
+                        target="_self"
                         >Sobre Nós</a
                       >
                     </li>
                     <li class="item">
-                      <a class="dropdown-item" href="/esg.html" target="_blank"
+                      <a class="dropdown-item" href="/esg.html" target="_self"
                         >ESG</a
                       >
                     </li>
@@ -557,7 +568,7 @@
                       <a
                         class="dropdown-item"
                         href="./privateEquity.html"
-                        target="_blank"
+                        target="_self"
                         >Private Equity</a
                       >
                     </li>
@@ -565,8 +576,8 @@
                       <a
                         class="dropdown-item"
                         href="./credito.html"
-                        target="_blank"
-                        >Credit</a
+                        target="_self"
+                        >Crédito</a
                       >
                     </li>
                   </ul>
@@ -580,7 +591,7 @@
                     id="menu-item-3"
                     aria-expanded="false"
                     data-bs-toggle="dropdown"
-                    target="_blank"
+                    target="_self"
                     >EQUIPE</a
                   >
                 </li>
@@ -600,24 +611,16 @@
                       <a
                         class="dropdown-item"
                         href="fale-conosco.html"
-                        target="_blank"
+                        target="_self"
                         >Fale conosco</a
-                      >
-                    </li>
-                    <li class="item">
-                      <a
-                        class="dropdown-item"
-                        href="carreira.html"
-                        target="_blank"
-                        >Carreira</a
                       >
                     </li>
 
                     <li class="item">
                       <a
                         class="dropdown-item"
-                        href="carreira.html"
-                        target="_blank"
+                        href="denuncias.html"
+                        target="_self"
                         >Canal de Denúncias</a
                       >
                     </li>
@@ -711,9 +714,10 @@
               <div class="area-restrista">
                 <a
                   id="Logout_LnkBtLogon"
-                  class="restricted-area"
-                  onclick="abreLogin()"
+                  class="restricted-area open-modal"
                   href="javascript:"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
                 >
                   <img src="images/icons/icon-restrito.svg" alt="" />
                   ÁREA RESTRITA
@@ -802,17 +806,74 @@
             <a href="">ESTRATÉGIAS</a>
             <a href="">EQUIPE</a>
             <a href="">CONTATO</a>
-            <a href="">CARREIRA</a>
+            <!-- <a href="">CARREIRA</a> -->
           </div>
         </div>
 
         <div class="contents-infos-footer">
+          <div class="last-map-footer">
+            <div class="top-footer-fixed">
+              <button
+                class="button-mapa-site"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseMapSite"
+                aria-expanded="false"
+                aria-controls="collapseMapSite"
+              >
+                <span> Mapa do site </span>
+                <i class="icon-exibir"></i>
+              </button>
+            </div>
+
+            <div class="collapse" id="collapseMapSite">
+              <div class="list-menu-footer">
+                <div>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://eucatex.riprisma.com/historico-e-perfil-corporativo"
+                        target="_self"
+                        >QUEM SOMOS
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://eucatex.riprisma.com/estrategia-e-vantagens-competitivas"
+                        target="_self"
+                        >ESTRATÉGIAS</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://eucatex.riprisma.com/segmentos-de-atuacao"
+                        target="_self"
+                        >EQUIPE</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://eucatex.riprisma.com/sustentabilidade"
+                        target="_self"
+                        >CONTATO</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://eucatex.riprisma.com/list.aspx?idCanal=XlzopEY9VHfQeIygzzsXMQ=="
+                        target="_self"
+                        >CARREIRA</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="infos-footer">
             <div class="texts-infos">
-              <p>
-                Para mais informações, entre em contato com <br />
-                a nossa equipe.
-              </p>
+              <p>Para mais informações, entre em contato com a nossa equipe.</p>
               <a class="link-footer" href="">Clique aqui</a>
             </div>
 
@@ -864,6 +925,7 @@
             <strong>BRZ Investimentos ©</strong> Todos os direitos reservados
             2023
           </p>
+
           <ul class="termos-condicoes">
             <li>
               <a href="./termos-e-condicoes"> Termos e Condições </a>
@@ -871,12 +933,10 @@
             <li>
               <a href="./politica-de-privacidade"> Política de Privacidade </a>
             </li>
-            <li>
-              <a href="./notas-legais"> Notas Legais </a>
-            </li>
           </ul>
+
           <p class="byRiweb">
-            <a target="_blank" href="https://www.riprisma.com/"
+            <a target="_self" href="https://www.riprisma.com/"
               ><img
                 src="https://template.riprisma.com/prisma/poweredby/selo/prisma-white.svg"
                 alt="Prisma"
@@ -892,11 +952,7 @@
         <aside class="mobile-menu">
           <div class="header-menu">
             <picture class="branding">
-              <img
-                class="logo-mobile"
-                src="./images/logo-prisma-branca.svg"
-                alt="Prisma"
-              />
+              <img class="logo-mobile" src="images/brz-logo.svg" alt="Prisma" />
             </picture>
             <div class="div-menu-open">
               <p>Fechar</p>
@@ -935,18 +991,15 @@
               <p>Aperte Enter para pesquisar</p>
             </div>
             <div class="institucional-and-language">
-              <a href="https://www.riweb.com.br/" target="_blank">
-                Institucional
-              </a>
               <ul>
                 <li id="btnPt" class="active">
                   <a href="javascript:__doPostBack('ctl00$hlkCulturaPtBr','')">
-                    Português
+                    PT
                   </a>
                 </li>
                 <li id="btnEn">
                   <a href="javascript:__doPostBack('ctl00$hlkCulturaEnUS','')">
-                    English
+                    EN
                   </a>
                 </li>
               </ul>
@@ -1014,7 +1067,7 @@
                     data-bs-toggle="collapse"
                     data-bs-target="#mobile-menu-2"
                     aria-controls="mobile-menu-2"
-                    >Governança</a
+                    >QUEM SOMOS</a
                   >
                 </h3>
                 <div
@@ -1025,32 +1078,11 @@
                   <div class="accordion-body">
                     <ul class="pages">
                       <li class="item">
-                        <a
-                          href="https://modelo.riprisma.com/diretoria-e-conselho"
-                          target="_self"
-                          >Diretoria e Conselho</a
-                        >
+                        <a href="sobre-nos.html" target="_self">Sobre nós</a>
                       </li>
+
                       <li class="item">
-                        <a
-                          href="https://modelo.riprisma.com/modelo-de-governanca"
-                          target="_self"
-                          >Modelo de Governança</a
-                        >
-                      </li>
-                      <li class="item">
-                        <a
-                          href="https://modelo.riprisma.com/estatutos-e-politicas"
-                          target="_self"
-                          >Estatutos e Políticas</a
-                        >
-                      </li>
-                      <li class="item">
-                        <a
-                          href="https://modelo.riprisma.com/perfil-corporativo"
-                          target="_self"
-                          >Perfil Corporativo</a
-                        >
+                        <a href="esg.html" target="_self">ESG</a>
                       </li>
                     </ul>
                   </div>
@@ -1065,7 +1097,7 @@
                     data-bs-toggle="collapse"
                     data-bs-target="#mobile-menu-3"
                     aria-controls="mobile-menu-3"
-                    >Informações Financeiras</a
+                    >estratégias</a
                   >
                 </h3>
                 <div
@@ -1079,38 +1111,12 @@
                         <a
                           href="https://modelo.riprisma.com/central-de-resultados"
                           target="_self"
-                          >Central de Resultados</a
+                          >Private Equity</a
                         >
                       </li>
                       <li class="item">
                         <a href="https://modelo.riprisma.com/#" target="_self"
-                          >Gráficos e Cotações</a
-                        >
-                      </li>
-                      <li class="item">
-                        <a
-                          href="https://modelo.riprisma.com/fatores-de-risco-do-negocio"
-                          target="_self"
-                          >Fatores de Risco do Negócio</a
-                        >
-                      </li>
-                      <li class="item">
-                        <a href="https://modelo.riprisma.com/#" target="_self"
-                          >Cobertura de Analistas</a
-                        >
-                      </li>
-                      <li class="item">
-                        <a
-                          href="https://modelo.riprisma.com/ListaAgenda.aspx?idCanal=IUEHf6pSdDDa4hnVqIdGKw=="
-                          target="_self"
-                          >Calendário de Eventos</a
-                        >
-                      </li>
-                      <li class="item">
-                        <a
-                          href="https://modelo.riprisma.com/documentos-cvm"
-                          target="_self"
-                          >Documentos CVM</a
+                          >Credit</a
                         >
                       </li>
                     </ul>
@@ -1120,7 +1126,7 @@
               <div class="accordion-item">
                 <h3>
                   <a
-                    href="javascript:void(0);"
+                    href="equipe.html"
                     class="accordion-button collapsed"
                     aria-expanded="false"
                     data-bs-toggle="collapse"
@@ -1129,28 +1135,6 @@
                     >Contato</a
                   >
                 </h3>
-                <div
-                  id="mobile-menu-4"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionMenuMobile"
-                >
-                  <div class="accordion-body">
-                    <ul class="pages">
-                      <li class="item">
-                        <a
-                          href="https://modelo.riprisma.com/fale-com-RI"
-                          target="_self"
-                          >Fale com RI</a
-                        >
-                      </li>
-                      <li class="item">
-                        <a href="cadastre-se-no-mailing" target="_self"
-                          >Cadastre-se no Mailing</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
               </div>
             </nav>
           </div>
@@ -1192,6 +1176,41 @@
     </div>
 
     <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Título do Modal</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Conteúdo do modal aqui -->
+            <p>Conteúdo do Modal</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
       class="termos-politica alertaLGPD alerta-dismissible box-cookies"
       style="display: none"
     >
@@ -1201,7 +1220,7 @@
           >Usamos cookies para lhe oferecer uma experiência de navegação melhor,
           analisar o tráfego do site e personalizar o conteúdo. Para saber mais
           sobre cookies acesse nosso
-          <a href="#" target="_blank">Termos de Uso e Privacidade</a>. Para
+          <a href="#" target="_self">Termos de Uso e Privacidade</a>. Para
           aceitar, clique no botão "aceitar cookies".</small
         >
         <a href="javascript:" class="primary-button" onclick="setCookie();">
@@ -1219,10 +1238,18 @@
     <div id="cadastroUsuario" style="display: none"></div>
 
     <script defer src="vendor/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script
-      defer
-      src="https://template.riprisma.com/prisma/js/storiesPrisma.min.js"
+      rel="stylesheet"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     ></script>
+
+    <!-- <script defer src="vendor/bootstrap.bundle.min.js"></script> -->
+    <!-- <script defer src="https://template.riprisma.com/prisma/js/storiesPrisma.min.js"
+    ></script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script defer src="vendor/counterup.js"></script>
@@ -1269,12 +1296,12 @@
       accesskey="9"
     ></a>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       //<![CDATA[
 
       var callBackFrameUrl =
         "/WebResource.axd?d=9veEvPM5djuaI0aGscWcysTZuzr4cZ7uF1XBxhE98ri1-LM_M9pWIyRSGNUqzRfT639-xIHny4KMkxOgfU-pfnXHzQssPi-31V5XyVyv3lg1&t=638343975423008439";
       WebForm_InitCallback(); //]]>
-    </script>
+    </script> -->
   </body>
 </html>

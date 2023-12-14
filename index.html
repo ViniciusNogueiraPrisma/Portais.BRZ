@@ -11,16 +11,8 @@
     <title></title>
     <meta name="description" content="Riweb - Relações com Investidores" />
     <meta name="theme-color" content="#ffffff" />
-    <link
-      rel="shortcut icon"
-      href="https://www.brzinvestimentos.com.br/wp-content/themes/mziq_brz_investimentos/img/favicon.ico"
-      sizes="60x60"
-    />
-    <link
-      rel="shortcut icon"
-      href="https://www.brzinvestimentos.com.br/wp-content/themes/mziq_brz_investimentos/img/favicon.ico"
-      sizes="76x76"
-    />
+    <link rel="shortcut icon" href="images/favicon-152px.png" sizes="60x60" />
+    <link rel="shortcut icon" href="images/favicon-152px.png" sizes="76x76" />
     <link
       rel="apple-touch-icon"
       href="images/apple-touch-120px.png"
@@ -221,6 +213,8 @@
 
     <script src="vendor/jquery.min.js"></script>
 
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+
     <!-- <link rel="manifest" href="manifest.json" /> -->
     <!-- <script src="../sw.js"></script> -->
 
@@ -378,7 +372,8 @@
           <div class="content">
             <!-- <div class="left-top-header">
                 <p>Relações com Investidores</p>
-                <a href="https://www.riweb.com.br/" target="_blank">
+                <a href="https://www.riweb.com.br/"                         target="_self"
+>
                   Site Institucional
                 </a>
               </div> -->
@@ -546,12 +541,12 @@
                       <a
                         class="dropdown-item"
                         href="./sobre-nos.html"
-                        target="_blank"
+                        target="_self"
                         >Sobre Nós</a
                       >
                     </li>
                     <li class="item">
-                      <a class="dropdown-item" href="/esg.html" target="_blank"
+                      <a class="dropdown-item" href="/esg.html" target="_self"
                         >ESG</a
                       >
                     </li>
@@ -573,7 +568,7 @@
                       <a
                         class="dropdown-item"
                         href="./privateEquity.html"
-                        target="_blank"
+                        target="_self"
                         >Private Equity</a
                       >
                     </li>
@@ -581,8 +576,8 @@
                       <a
                         class="dropdown-item"
                         href="./credito.html"
-                        target="_blank"
-                        >Credit</a
+                        target="_self"
+                        >Crédito</a
                       >
                     </li>
                   </ul>
@@ -596,7 +591,7 @@
                     id="menu-item-3"
                     aria-expanded="false"
                     data-bs-toggle="dropdown"
-                    target="_blank"
+                    target="_self"
                     >EQUIPE</a
                   >
                 </li>
@@ -616,16 +611,8 @@
                       <a
                         class="dropdown-item"
                         href="fale-conosco.html"
-                        target="_blank"
+                        target="_self"
                         >Fale conosco</a
-                      >
-                    </li>
-                    <li class="item">
-                      <a
-                        class="dropdown-item"
-                        href="carreira.html"
-                        target="_blank"
-                        >Carreira</a
                       >
                     </li>
 
@@ -633,7 +620,7 @@
                       <a
                         class="dropdown-item"
                         href="denuncias.html"
-                        target="_blank"
+                        target="_self"
                         >Canal de Denúncias</a
                       >
                     </li>
@@ -729,7 +716,8 @@
                   id="Logout_LnkBtLogon"
                   class="restricted-area open-modal"
                   href="javascript:"
-             
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
                 >
                   <img src="images/icons/icon-restrito.svg" alt="" />
                   ÁREA RESTRITA
@@ -797,22 +785,22 @@
 
           <div class="second-infos">
             <div class="content-second-infos">
-              <h1>+ R$ 2,5Bi</h1>
+              <h1 class="counter">+ R$ 2,5Bi</h1>
               <p>de AuM¹</p>
             </div>
 
             <div class="content-second-infos">
-              <h1>24</h1>
-              <p>fundos sob gestão (2023)</p>
-            </div>
-
-            <div class="content-second-infos">
-              <h1>+ R$ 1,3Bi</h1>
+              <h1 class="counter">+ R$ 1,3Bi</h1>
               <p>em AuM em Private Equity¹</p>
             </div>
 
             <div class="content-second-infos">
-              <h1>+ R$ 1,2Bi</h1>
+              <h1 class="counter">24</h1>
+              <p>fundos sob gestão (2023)</p>
+            </div>
+
+            <div class="content-second-infos">
+              <h1 class="counter">+ R$ 1,2Bi</h1>
               <p>em AuM¹ em Crédito Privado¹</p>
             </div>
           </div>
@@ -935,7 +923,7 @@
             <a href="">ESTRATÉGIAS</a>
             <a href="">EQUIPE</a>
             <a href="">CONTATO</a>
-            <a href="">CARREIRA</a>
+            <!-- <a href="">CARREIRA</a> -->
           </div>
         </div>
 
@@ -1065,7 +1053,7 @@
           </ul>
 
           <p class="byRiweb">
-            <a target="_blank" href="https://www.riprisma.com/"
+            <a target="_self" href="https://www.riprisma.com/"
               ><img
                 src="https://template.riprisma.com/prisma/poweredby/selo/prisma-white.svg"
                 alt="Prisma"
@@ -1306,81 +1294,34 @@
 
     <div
       class="modal fade"
-      id="modalLogin"
+      id="myModal"
       tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-img">
-            <img src="images/thumbs-equipe-1.png" alt="" />
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Título do Modal</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-
-          <div class="itens-modal">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">
-                Ricardo Propheta
-
-                <small> Cargo </small>
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-
-            <div class="modal-texts">
-              <p>
-                Ricardo é sócio fundador da BRZ Investimentos e também CEO da
-                Gestora.
-              </p>
-
-              <p>
-                Atua diretamente no mercado de Private Equity e Venture Capital
-                desde 2002, quando ingressou no Grupo GP Investments, onde
-                participou da gestão de fundos de participações locais e
-                internacionais e integrou conselhos de administração de
-                companhias investidas.
-              </p>
-
-              <p>
-                Na BRZ Investimentos, participou da captação e acompanhamento de
-                diferentes fundos de participações e de crédito estruturado,
-                participou de mais de 20 transações de aquisição, venda e fusão,
-                além de ter participado ou ainda participar de comitês e
-                conselhos de administração de empresas como: Poit Energia,
-                Sascar, Magnesita, América Latina Logística, LOGZ Logística
-                Brasil, Amata, Guararapes Painéis e Regina Festas, dentre
-                outras.
-              </p>
-
-              <p>
-                Por fim, Ricardo Propheta foi conselheiro da ABVCAP por 4
-                mandatos e é mentor da Endeavor desde 2003, onde suporta a
-                análise de projetos candidatos a “Empreendedor Endeavor” e atua
-                como mentor de empresas apoiadas.
-              </p>
-
-              <p>
-                É graduado em Engenharia de Produção pela Escola Politécnica da
-                USP
-              </p>
-
-              <div class="social-modal">
-                <a href=""
-                  ><img
-                    src="images/icons/icon-linkedin.svg"
-                    alt=""
-                  />Linkedin</a
-                >
-              </div>
-            </div>
+          <div class="modal-body">
+            <!-- Conteúdo do modal aqui -->
+            <p>Conteúdo do Modal</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
           </div>
         </div>
       </div>
@@ -1396,7 +1337,7 @@
           >Usamos cookies para lhe oferecer uma experiência de navegação melhor,
           analisar o tráfego do site e personalizar o conteúdo. Para saber mais
           sobre cookies acesse nosso
-          <a href="#" target="_blank">Termos de Uso e Privacidade</a>. Para
+          <a href="#" target="_self">Termos de Uso e Privacidade</a>. Para
           aceitar, clique no botão "aceitar cookies".</small
         >
         <a href="javascript:" class="primary-button" onclick="setCookie();">

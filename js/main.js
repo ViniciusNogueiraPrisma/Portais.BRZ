@@ -14,17 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   openModalLinks.forEach(function (link) {
     link.addEventListener("click", function (event) {
-      event.preventDefault(); // Impede o comportamento padrão do link
+      event.preventDefault();
 
-      // Obtém o atributo data-bs-target do link
       var targetModalId = link.getAttribute("data-bs-target");
 
-      // Verifica se o atributo existe antes de continuar
       if (targetModalId) {
-        // Obtém a referência do modal
         var targetModalElement = document.querySelector(targetModalId);
 
-        // Verifica se o modal foi encontrado antes de tentar mostrá-lo
         if (targetModalElement) {
           var targetModal = new bootstrap.Modal(targetModalElement);
           targetModal.show();
@@ -36,6 +32,101 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const counterUp = window.counterUp.default;
+
+const callback = (entries) => {
+  entries.forEach((entry) => {
+    const el = entry.target;
+    if (entry.isIntersecting && !el.classList.contains("is-visible")) {
+      counterUp(el, {
+        duration: 1000,
+        // delay: 16,
+      });
+      el.classList.add("is-visible");
+    }
+  });
+};
+
+const IO = new IntersectionObserver(callback, { threshold: 1 });
+const elements = document.querySelectorAll(".counter");
+
+elements.forEach((el) => {
+  IO.observe(el);
+});
+
+$("#myModal").on("hidden.bs.modal", function (e) {
+  if (e && e.which === 27) {
+    return;
+  }
+
+  // Restaura o overflow e padding-right do body
+  $("body").css({
+    "overflow": "auto",
+    "padding-right": ""
+  });
+
+  $(this).modal("dispose");
+
+  setTimeout(function () {
+    $(".modal-backdrop").remove();
+  }, 100);
+
+  $(this).removeData("bs.modal");
+});
+
+$("#modal1").on("shown.bs.modal", function () {
+  // Define o overflow do body como hidden apenas se necessário
+  if ($(document).height() > $(window).height()) {
+    $("body").css("overflow", "hidden");
+  }
+});
+
+$("#modal1").on("show.bs.modal", function () {
+  if ($(".modal-backdrop").length === 0) {
+    $("body").append('<div class="modal-backdrop show"></div>');
+  }
+});
+
+$("#modal1").on("hidden.bs.modal", function (e) {
+  if (e && e.which === 27) {
+    return;
+  }
+
+  // Restaura o overflow e padding-right do body
+  $("body").css({
+    "overflow": "auto",
+    "padding-right": ""
+  });
+
+  $(this).modal("dispose");
+
+  setTimeout(function () {
+    $(".modal-backdrop").remove();
+  }, 100);
+
+  $(this).removeData("bs.modal");
+});
+
+$("#modal1").on("shown.bs.modal", function () {
+  // Define o overflow do body como hidden apenas se necessário
+  if ($(document).height() > $(window).height()) {
+    $("body").css("overflow", "hidden");
+  }
+});
+
+$("#modal1").on("show.bs.modal", function () {
+  if ($(".modal-backdrop").length === 0) {
+    $("body").append('<div class="modal-backdrop show"></div>');
+  }
+});
+
+
+// Se o modal for aberto por algum outro meio, como um botão, você pode precisar adicionar um código para remover a classe 'modal-open' e reiniciar o overflow do body. Algo assim:
+
+$("#modal1").on("shown.bs.modal", function () {
+  $("body").addClass("modal-open");
+  $("body").css("overflow", "hidden");
+});
 // observes the input's :focus and :focusout event inside the search box and styles its parent element.
 
 $(".searchbox input").focus(function () {
@@ -55,32 +146,32 @@ $(".open-searchbox, .close-searchbox").click(function () {
 
 // manages the status of the mobile menu.
 
-document.addEventListener("DOMContentLoaded", function () {
-  var buttonMapaSite = document.querySelector(".button-mapa-site");
-  var collapseMapSite = document.getElementById("collapseMapSite");
+// document.addEventListener("DOMContentLoaded", function () {
+//   var buttonMapaSite = document.querySelector(".button-mapa-site");
+//   var collapseMapSite = document.getElementById("collapseMapSite");
 
-  buttonMapaSite.addEventListener("click", function () {
-    if ($(collapseMapSite).hasClass("show")) {
-      collapseMapSite.addEventListener("hidden.bs.collapse", function () {
-        collapseMapSite.style.height = "";
-        collapseMapSite.style.transition = "";
-      });
+//   buttonMapaSite.addEventListener("click", function () {
+//     if ($(collapseMapSite).hasClass("show")) {
+//       collapseMapSite.addEventListener("hidden.bs.collapse", function () {
+//         collapseMapSite.style.height = "";
+//         collapseMapSite.style.transition = "";
+//       });
 
-      $(collapseMapSite).collapse("hide");
-    } else {
-      collapseMapSite.addEventListener("show.bs.collapse", function () {
-        collapseMapSite.style.height = "auto";
-        collapseMapSite.style.transition = "height 0.3s ease-out";
-      });
+//       $(collapseMapSite).collapse("hide");
+//     } else {
+//       collapseMapSite.addEventListener("show.bs.collapse", function () {
+//         collapseMapSite.style.height = "auto";
+//         collapseMapSite.style.transition = "height 0.3s ease-out";
+//       });
 
-      collapseMapSite.addEventListener("shown.bs.collapse", function () {
-        collapseMapSite.style.transition = "";
-      });
+//       collapseMapSite.addEventListener("shown.bs.collapse", function () {
+//         collapseMapSite.style.transition = "";
+//       });
 
-      $(collapseMapSite).collapse("show");
-    }
-  });
-});
+//       $(collapseMapSite).collapse("show");
+//     }
+//   });
+// });
 
 $(".toggle-mobile-menu").click(function () {
   $(".mobile-menu-div").toggleClass("active");

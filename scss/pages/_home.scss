@@ -330,6 +330,10 @@
       line-height: 44px;
       margin: 0;
       padding: 0;
+
+      @media(max-width: 768px) {
+        font-size: 30px;
+      }
     }
 
     p {
@@ -339,6 +343,11 @@
       font-family: var(--font-roboto-slab);
       line-height: 44px;
       margin-bottom: 40px;
+
+      
+      @media(max-width: 768px) {
+        font-size: 30px;
+      }
     }
 
     .button {
@@ -507,6 +516,11 @@
       margin-bottom: 40px;
 
       margin-top: 40px;
+
+      
+      @media(max-width: 768px) {
+        font-size: 30px;
+      }
     }
 
     span {
@@ -537,6 +551,7 @@
     grid-column-gap: 24px;
     grid-row-gap: 24px;
     padding-top: 40px;
+    height: fit-content;
 
     @media (max-width: 1256px) {
       width: 100%;
@@ -953,6 +968,11 @@
 
         margin: 0;
         padding: 0;
+
+        
+      @media(max-width: 768px) {
+        font-size: 20px;
+      }
       }
       p {
         color: #595b61;
@@ -972,6 +992,11 @@
       font-weight: 400;
       line-height: 24px;
       margin-top: 40px !important;
+
+      
+      @media(max-width: 768px) {
+        font-size: 16px;
+      }
     }
 
     h3 {
@@ -985,6 +1010,11 @@
 
       padding-top: 16px;
       padding-bottom: 16px;
+
+      
+      @media(max-width: 768px) {
+        font-size: 24px;
+      }
     }
 
     h4 {

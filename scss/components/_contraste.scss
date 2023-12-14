@@ -472,4 +472,22 @@
   .button__icon img {
     filter: grayscale(1);
   }
+
+  .accordion .accordion-header button {
+    background-color: transparent;
+    border-bottom: 1px solid #fff !important;
+    color: #fff;
+  }
+
+  .accordion .accordion-header button::after {
+    color: #fff !important;
+  }
+
+  .container-cards-tabs .cards-tabs:hover .infos-cards-tabs small {
+    background-color: #383838 !important;
+  }
+
+  .container-cards-tabs .cards-tabs .infos-cards-tabs a {
+    color: #fff;
+  }
 }

@@ -645,7 +645,7 @@
   padding: 80px 0px;
 
   .container-internas {
-    padding: 0;
+    padding: 0 !important;
   }
 
   .title-downloads {
@@ -1264,12 +1264,15 @@
 
   .cards-credito {
     padding: 48px 32px;
-    background-color: rgba(125, 125, 125, 0.9);
+    background-color: rgba(55, 53, 53, 0.9) !important;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 450px;
     transition: 0.4s;
+    background-image: url("../../images/thumbnail-cards-estrategia.jpg");
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
 
     @media (max-width: 1032px) {
       margin-top: 0px;
@@ -1283,11 +1286,11 @@
     &:first-child {
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px;
-      background-color: #b1b2b4e5;
+      // background-color: #b1b2b4e5;
     }
 
     &:nth-child(2) {
-      background-color: #918f8fe5;
+      // background-color: #918f8fe5;
 
       p {
         margin-top: 24px;
@@ -1297,7 +1300,7 @@
     &:last-child {
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px;
-      background-color: #565555e5;
+      // background-color: #565555e5;
     }
 
     &:hover {
@@ -1378,7 +1381,7 @@
 }
 
 .modal-backdrop.show {
-  opacity: 0.5!important;
+  opacity: 0.5 !important;
 }
 
 .cards-tab-credito {
@@ -1902,14 +1905,15 @@
   transition: background 0.3s ease !important;
 }
 
-.cards-credito:hover {
-  background: rgb(237, 125, 49);
-  background: linear-gradient(
-    0deg,
-    rgba(237, 125, 49, 1) 0%,
-    rgba(255, 255, 255, 0) 94%
-  );
-}
+// .cards-credito:hover {
+//   background: rgb(0,0,0);
+//   background: -moz-linear-gradient(0deg, rgba(0,0,0,0.28335084033613445) 22%, rgba(0,0,0,0.3841911764705882) 56%);
+//   background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.28335084033613445) 22%, rgba(0,0,0,0.3841911764705882) 56%);
+//   background: linear-gradient(0deg, rgba(0,0,0,0.28335084033613445) 22%, rgba(0,0,0,0.3841911764705882) 56%);
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+  
+// }
+
 .txts-denuncias {
   p {
     color: #666666;
@@ -1995,3 +1999,4 @@
 .container-lists {
   padding: 80px 0px;
 }
+

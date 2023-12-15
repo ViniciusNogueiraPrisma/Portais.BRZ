@@ -289,7 +289,7 @@
     background-color: #282828 !important;
 
     &:hover {
-      background: #282828 !important;
+      // background: #282828 !important;
     }
   }
 
@@ -490,4 +490,19 @@
   .container-cards-tabs .cards-tabs .infos-cards-tabs a {
     color: #fff;
   }
+
+  .modal-header .btn-close {
+    filter: contrast(0.9) brightness(44.5);
+  }
+
+  .form-login button.primary-button {
+    background-color: #3f3f3f;
+    color: white;
+  }
+
+  a {
+    color: white;
+  }
+
+  
 }

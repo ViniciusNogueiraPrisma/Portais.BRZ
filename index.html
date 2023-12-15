@@ -1299,10 +1299,10 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
-        <div class="modal-content">
+      <div class="modal-dialog modal-dialog-login">
+        <div class="modal-content modal-content-login">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Título do Modal</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
             <button
               type="button"
               class="btn-close"
@@ -1311,17 +1311,41 @@
             ></button>
           </div>
           <div class="modal-body">
-            <!-- Conteúdo do modal aqui -->
-            <p>Conteúdo do Modal</p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Fechar
-            </button>
+            <p>
+              Preencha os campos abaixo com seus dados para acessar a área
+              restrita
+            </p>
+            <div class="form-login">
+              <div class="div-input">
+                <label for="TxtEmail" class="form-label"> E-mail </label>
+                <input name="TxtEmail" type="text" id="TxtEmail" />
+              </div>
+              <div class="div-input">
+                <label for="TxtSenha" class="form-label"> Senha </label>
+                <input name="TxtSenha" type="password" id="TxtSenha" />
+              </div>
+              <span
+                id="LblMsg"
+                class="control-label lblMsg"
+                style="color: Red"
+              ></span>
+
+              <a href="javascript:BoxRecupera();"> Esqueceu sua senha? </a>
+
+              <button
+                type="button"
+                onclick="javascript:LogarUsuario();"
+                class="primary-button"
+              >
+                Fazer Login
+              </button>
+              <p class="create-account-link">
+                Ainda não tem uma conta?
+                <a onclick="javascript:abreModalCadastro();" href="javascript:">
+                  Cadastre-se
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>

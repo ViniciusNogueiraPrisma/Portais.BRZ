@@ -1374,7 +1374,7 @@
       <div class="modal-dialog modal-dialog-login">
         <div class="modal-content modal-content-login">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Recuperar Senha</h5>
             <button
               type="button"
               class="btn-close"
@@ -1384,14 +1384,82 @@
           </div>
           <div class="modal-body">
             <p>
-              Preencha os campos abaixo com seus dados para acessar a área
-              restrita
+              Por favor, insira o endereço de e-mail para esta conta. Um link de
+              recuperação será enviado a você. Depois de receber o link, você
+              pode escolher uma nova senha para esta conta.
             </p>
             <div class="form-login">
               <div class="div-input">
                 <label for="TxtEmail" class="form-label"> E-mail </label>
                 <input name="TxtEmail" type="text" id="TxtEmail" />
               </div>
+
+              <span
+                id="LblMsg"
+                class="control-label lblMsg"
+                style="color: Red"
+              ></span>
+
+              <a href="javascript:BoxRecupera();"> Esqueceu sua senha? </a>
+
+              <button
+                type="button"
+                onclick="javascript:LogarUsuario();"
+                class="primary-button"
+              >
+                Enviar
+              </button>
+              <p class="create-account-link">
+                Ainda não tem uma conta?
+                <a
+                  onclick="javascript:abreModalCadastro();"
+                  class="restricted-area open-modal"
+                  href="javascript:"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal3"
+                >
+                  Cadastre-se
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="myModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-login">
+        <div class="modal-content modal-content-login">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cadastro</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Preencha os campos para se cadastrar e ter acesso ao conteúdo
+              exclusivo
+            </p>
+            <div class="form-login">
+              <div class="div-input">
+                <label for="TxtEmail" class="form-label"> E-mail </label>
+                <input name="TxtEmail" type="text" id="TxtEmail" />
+              </div>
+              <div class="div-input">
+                <label for="TxtEmail" class="form-label"> E-mail </label>
+                <input name="TxtEmail" type="text" id="TxtEmail" />
+              </div>
+
               <div class="div-input">
                 <label for="TxtSenha" class="form-label"> Senha </label>
                 <input name="TxtSenha" type="password" id="TxtSenha" />
@@ -1409,78 +1477,13 @@
                 onclick="javascript:LogarUsuario();"
                 class="primary-button"
               >
-                Fazer Login
+                Cadastrar
               </button>
-              <p class="create-account-link">
-                Ainda não tem uma conta?
-                <a onclick="javascript:abreModalCadastro();" href="javascript:">
-                  Cadastre-se
-                </a>
-              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div
-    class="modal fade"
-    id="myModal3"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-dialog-login">
-      <div class="modal-content modal-content-login">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body">
-          <p>
-            Preencha os campos abaixo com seus dados para acessar a área
-            restrita
-          </p>
-          <div class="form-login">
-            <div class="div-input">
-              <label for="TxtEmail" class="form-label"> E-mail </label>
-              <input name="TxtEmail" type="text" id="TxtEmail" />
-            </div>
-            <div class="div-input">
-              <label for="TxtSenha" class="form-label"> Senha </label>
-              <input name="TxtSenha" type="password" id="TxtSenha" />
-            </div>
-            <span
-              id="LblMsg"
-              class="control-label lblMsg"
-              style="color: Red"
-            ></span>
-
-            <a href="javascript:BoxRecupera();"> Esqueceu sua senha? </a>
-
-            <button
-              type="button"
-              onclick="javascript:LogarUsuario();"
-              class="primary-button"
-            >
-              Fazer Login
-            </button>
-            <p class="create-account-link">
-              Ainda não tem uma conta?
-              <a onclick="javascript:abreModalCadastro();" href="javascript:">
-                Cadastre-se
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
     <div
       class="termos-politica alertaLGPD alerta-dismissible box-cookies"
       style="display: none"

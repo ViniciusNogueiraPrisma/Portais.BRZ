@@ -54,28 +54,58 @@ elements.forEach((el) => {
   IO.observe(el);
 });
 
-$("#myModal").on("hidden.bs.modal", function (e) {
+var activeModal = null;
+
+$(".modal").on("show.bs.modal", function () {
+  if (activeModal !== null && activeModal.attr("id") !== $(this).attr("id")) {
+    activeModal.modal("hide");
+  }
+
+  activeModal = $(this);
+
+  $("body").addClass("modal-open");
+});
+
+$(".modal").on("hidden.bs.modal", function (e) {
   if (e && e.which === 27) {
     return;
   }
 
-  // Restaura o overflow e padding-right do body
-  $("body").css({
-    "overflow": "auto",
-    "padding-right": ""
-  });
+  $("body").css("padding-right", "");
 
-  $(this).modal("dispose");
+  $("body").removeClass("modal-open");
 
-  setTimeout(function () {
+  if ($(".modal:visible").length === 0) {
     $(".modal-backdrop").remove();
-  }, 100);
-
-  $(this).removeData("bs.modal");
+  }
 });
 
+$("#myModal, #myModal2, #myModal3").on("hide.bs.modal", function () {
+  if (activeModal !== null) {
+    activeModal = null;
+  }
+});
+
+// $("#myModal").on("hidden.bs.modal", function (e) {
+//   if (e && e.which === 27) {
+//     return;
+//   }
+
+//   $("body").css({
+//     overflow: "auto",
+//     "padding-right": "",
+//   });
+
+//   $(this).modal("dispose");
+
+//   setTimeout(function () {
+//     $(".modal-backdrop").remove();
+//   }, 2000);
+
+//   // $(this).removeData("bs.modal");
+// });
+
 $("#modal1").on("shown.bs.modal", function () {
-  // Define o overflow do body como hidden apenas se necessário
   if ($(document).height() > $(window).height()) {
     $("body").css("overflow", "hidden");
   }
@@ -92,10 +122,9 @@ $("#modal1").on("hidden.bs.modal", function (e) {
     return;
   }
 
-  // Restaura o overflow e padding-right do body
   $("body").css({
-    "overflow": "auto",
-    "padding-right": ""
+    overflow: "auto",
+    "padding-right": "",
   });
 
   $(this).modal("dispose");
@@ -108,7 +137,6 @@ $("#modal1").on("hidden.bs.modal", function (e) {
 });
 
 $("#modal1").on("shown.bs.modal", function () {
-  // Define o overflow do body como hidden apenas se necessário
   if ($(document).height() > $(window).height()) {
     $("body").css("overflow", "hidden");
   }
@@ -119,9 +147,6 @@ $("#modal1").on("show.bs.modal", function () {
     $("body").append('<div class="modal-backdrop show"></div>');
   }
 });
-
-
-// Se o modal for aberto por algum outro meio, como um botão, você pode precisar adicionar um código para remover a classe 'modal-open' e reiniciar o overflow do body. Algo assim:
 
 $("#modal1").on("shown.bs.modal", function () {
   $("body").addClass("modal-open");
